@@ -100,8 +100,10 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html lang={locale} className={inter.variable}>
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/images/app-icon-3C4823@2x.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/images/app-icon-3C4823@3x.png" />
         <meta name="theme-color" content="#556B2F" />
       </head>
       <body className="antialiased">

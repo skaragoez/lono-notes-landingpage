@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import Button from '@/components/ui/Button';
@@ -40,13 +41,15 @@ export default function Header() {
     >
       <nav className="container mx-auto flex items-center justify-between px-4 py-4">
         {/* Logo */}
-        <Link href={`/${locale}`} className="flex items-center gap-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[var(--color-primary)] text-2xl">
-            🌿
-          </div>
-          <span className="text-xl font-bold text-[var(--color-text-dark)]">
-            LONO Notes
-          </span>
+        <Link href={`/${locale}`} className="flex items-center gap-3">
+          <Image
+            src="/images/lono-notes@2x.png"
+            alt="LONO Notes Logo"
+            width={160}
+            height={40}
+            className="h-10 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop Navigation */}

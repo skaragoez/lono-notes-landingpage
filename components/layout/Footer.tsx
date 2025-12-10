@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 
@@ -44,13 +45,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5 mb-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[var(--color-primary)] text-2xl">
-                🌿
-              </div>
-              <span className="text-xl font-bold text-[var(--color-text-dark)]">
-                LONO Notes
-              </span>
+            <div className="mb-4">
+              <Image
+                src="/images/lono-notes@2x.png"
+                alt="LONO Notes Logo"
+                width={160}
+                height={40}
+                className="h-10 w-auto"
+              />
             </div>
             <p className="text-[var(--color-text)] mb-4 max-w-sm">
               {t('tagline')}

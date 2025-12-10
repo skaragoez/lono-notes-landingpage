@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import { FileQuestion, Search, BookX, Shuffle } from 'lucide-react';
 
 export default function ProblemSection() {
@@ -40,11 +41,20 @@ export default function ProblemSection() {
           ))}
         </div>
 
-        {/* Visual Divider */}
+        {/* Visual Divider with App Icon */}
         <div className="mt-16 flex items-center justify-center">
           <div className="flex items-center gap-4">
             <div className="h-1 w-12 rounded-full bg-gradient-to-r from-[var(--color-warning)] to-transparent" />
-            <div className="text-3xl">→</div>
+            <div className="relative">
+              <div className="absolute inset-0 bg-[var(--color-primary)] opacity-20 blur-2xl rounded-full" />
+              <Image
+                src="/images/app-icon-raw.png"
+                alt="LONO Notes"
+                width={64}
+                height={64}
+                className="relative z-10 drop-shadow-xl animate-pulse"
+              />
+            </div>
             <div className="h-1 w-12 rounded-full bg-gradient-to-r from-transparent to-[var(--color-secondary)]" />
           </div>
         </div>

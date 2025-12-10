@@ -1,6 +1,20 @@
-# LONO Notes App Screenshots
+# LONO Notes App Assets
 
-This directory contains 31 high-quality iPhone 15 Pro screenshots of the LONO Notes app, organized by feature category.
+This directory contains 31 high-quality iPhone 15 Pro screenshots of the LONO Notes app, plus branding assets like logos and icons.
+
+## Branding Assets
+
+### Logo & Icons
+- `lono-notes@2x.png` - Full LONO Notes logo with text (used in Header & Footer)
+- `app-icon-raw.png` - Original app icon with leaf and notebook design
+- `app-icon-3C4823@1x.png` - App icon @1x resolution
+- `app-icon-3C4823@2x.png` - App icon @2x resolution (192x192)
+- `app-icon-3C4823@3x.png` - App icon @3x resolution (512x512)
+
+### Splash Screens
+- `splash-screen.png` - Standard resolution splash screen
+- `splash-screen@2x.png` - Retina display splash screen
+- `splash-screen@3x.png` - Super retina display splash screen
 
 ## Screenshot Inventory
 
