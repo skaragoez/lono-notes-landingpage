@@ -6,15 +6,15 @@
     "download": "Jetzt herunterladen"
   },
   "hero": {
-    "headline": "Organisiere dein Wissen über Naturheilkunde an einem Ort",
-    "subheadline": "Schluss mit Chaos in deinen Rezepten. LONO Notes hilft dir, deine Kräuterrezepte, Symptome und Gesundheitsziele übersichtlich zu verwalten.",
+    "headline": "Deine Naturheilkunde-Rezepte. Endlich organisiert.",
+    "subheadline": "Nie wieder vergessen, was dir geholfen hat. Mit LONO Notes hast du alle Rezepte, Symptome und Fortschritte an einem Ort – immer griffbereit.",
     "cta": "Kostenlos starten",
     "ctaSecondary": "Mehr erfahren",
     "trustElement": "Über 10.000+ Wellness-Enthusiasten vertrauen uns"
   },
   "problem": {
-    "title": "Kennst du das Problem?",
-    "subtitle": "Deine Naturheilkunde-Rezepte sind überall verstreut",
+    "title": "Kommt dir das bekannt vor?",
+    "subtitle": "Ohne System verlierst du wertvolles Wissen über deine Gesundheit",
     "pain1": "Welcher Tee hat bei meiner Migräne geholfen?",
     "pain2": "Wo war nochmal das Rezept für die Ringelblumensalbe?",
     "pain3": "Welche Wickel habe ich beim letzten Mal verwendet?",
@@ -22,42 +22,62 @@
   },
   "features": {
     "title": "Alles was du brauchst",
-    "subtitle": "Die perfekte App für deine natürliche Gesundheitsreise",
-    "organization": {
-      "title": "Smart Organisation",
-      "description": "Kategorisiere Rezepte nach Kräutern & Tees, Ölen & Salben, Bädern & Wickeln, Ernährung"
-    },
-    "tracking": {
-      "title": "Symptom-Tracking",
-      "description": "Verfolge Schlaf, Energie, Stimmung, Schmerzen und Verdauung mit schönen Diagrammen"
-    },
-    "insights": {
-      "title": "Personalisierte Insights",
-      "description": "KI-gestützte Inhalte basierend auf deinen Interessen und Beschwerden"
-    },
-    "accessible": {
-      "title": "Immer verfügbar",
-      "description": "Deine Gesundheitsdaten sicher in der Cloud, verfügbar auf allen Geräten"
-    }
+    "intro": "Die perfekte App für deine natürliche Gesundheitsreise.",
+    "list": [
+      "Organisiere deine Kräuterrezepte mit Tags und Kategorien",
+      "Tracke täglich deine Symptome in nur 5 Sekunden",
+      "Erkenne Zusammenhänge zwischen Beschwerden und Heilmitteln",
+      "Erreiche deine Wellness-Ziele mit klarem Überblick"
+    ],
+    "cards": [
+      {
+        "title": "Nie wieder Rezepte verlieren",
+        "description": "Organisiere deine Rezepte mit Tags und Kategorien – finde blitzschnell, was dir geholfen hat."
+      },
+      {
+        "title": "Erkenne, was dir wirklich hilft",
+        "description": "Tracke täglich deine Symptome in 5 Sekunden und entdecke Zusammenhänge mit schönen Diagrammen."
+      },
+      {
+        "title": "Setze Ziele, feiere Erfolge",
+        "description": "Definiere wöchentliche Gesundheitsziele und verfolge deinen Fortschritt automatisch."
+      },
+      {
+        "title": "Inhalte, die zu dir passen",
+        "description": "Erhalte einen personalisierten Feed mit Rezepten, die zu deinen Beschwerden und Zielen passen."
+      }
+    ]
   },
   "howItWorks": {
     "title": "So einfach funktioniert's",
-    "subtitle": "In wenigen Schritten zu mehr Übersicht",
+    "subtitle": "In 7 Schritten zu deiner organisierten Naturheilkunde",
     "step1": {
-      "title": "Rezepte hinzufügen",
-      "description": "Füge deine Naturheilkunde-Rezepte, Kräutermixturen und Anwendungen hinzu"
+      "title": "Notizen hinzufügen",
+      "description": "Erstelle deine Naturheilkunde-Rezepte schnell und einfach mit Tags und Kategorien"
     },
     "step2": {
-      "title": "Symptome tracken",
-      "description": "Notiere täglich deine Symptome und Beschwerden im Gesundheitsjournal"
+      "title": "Notizen finden",
+      "description": "Finde blitzschnell jedes Rezept mit intelligenter Suche und Filtern nach Tags und Kategorien"
     },
     "step3": {
-      "title": "Verbindungen erkennen",
-      "description": "Entdecke welche Mittel dir am besten helfen"
+      "title": "Journal führen",
+      "description": "Dokumentiere täglich deine Erfahrungen, Anwendungen und Beobachtungen"
     },
     "step4": {
-      "title": "Ziele erreichen",
-      "description": "Setze wöchentliche Gesundheitsziele und verfolge deinen Fortschritt"
+      "title": "Symptome tracken",
+      "description": "Tracke in 5 Sekunden deine Symptome wie Schlaf, Energie, Stimmung und Schmerz"
+    },
+    "step5": {
+      "title": "Weekly Review",
+      "description": "Reflektiere wöchentlich deine Fortschritte und erkenne Muster in deiner Gesundheit"
+    },
+    "step6": {
+      "title": "Goals setzen",
+      "description": "Definiere Gesundheitsziele und verfolge deinen Fortschritt automatisch"
+    },
+    "step7": {
+      "title": "Coming Soon",
+      "description": "Freue dich auf KI-gestützte Empfehlungen, RAG-System und smarte Analysen"
     }
   },
   "socialProof": {
@@ -92,40 +112,66 @@
     }
   },
   "pricing": {
-    "title": "Kostenlos starten, später mehr entdecken",
-    "subtitle": "LONO Notes ist kostenlos nutzbar. Pro-Features kommen bald!",
+    "title": "Starte kostenlos – upgraden kannst du später",
+    "subtitle": "Beginne heute mit der kostenlosen Version. Erweiterte Features kommen bald!",
+    "billingToggle": {
+      "monthly": "Monatlich",
+      "yearly": "Jährlich",
+      "save": "Spare 20%"
+    },
     "free": {
       "title": "Free",
-      "price": "Kostenlos",
+      "price": "0€ – Für immer",
       "features": [
-        "Unbegrenzte Rezepte",
-        "Symptom-Tracking",
-        "Gesundheitsjournal",
-        "Personalisierter Feed",
-        "Ziele setzen"
+        "Unbegrenzte Notizen mit vordefinierten Tags und Kategorien",
+        "Unbegrenzte Journal-Einträge"
       ],
-      "cta": "Jetzt starten"
+      "cta": "Kostenlos loslegen"
     },
-    "pro": {
-      "title": "Pro (Demnächst)",
-      "price": "Bald verfügbar",
+    "basis": {
+      "title": "Basis",
+      "priceMonthly": "7,99€",
+      "priceYearly": "76,99€",
+      "pricePeriod": {
+        "monthly": "/ Monat",
+        "yearly": "/ Jahr"
+      },
       "features": [
         "Alles aus Free",
-        "KI-Chatbot für Naturheilkunde",
-        "RAG-System für deine E-Books",
-        "Erweiterte Analysen",
-        "Prioritäts-Support"
+        "Personalisierte Tags",
+        "Personalisierte Kategorien",
+        "Symptom-Tracking",
+        "Weekly Review",
+        "Goals",
+        "Progress Dashboard"
+      ],
+      "cta": "Jetzt upgraden",
+      "badge": "Empfehlung"
+    },
+    "pro": {
+      "title": "Pro",
+      "priceMonthly": "14,99€",
+      "priceYearly": "143,99€",
+      "pricePeriod": {
+        "monthly": "/ Monat",
+        "yearly": "/ Jahr"
+      },
+      "features": [
+        "Alles aus Basis",
+        "KI Naturheilkunde-Berater",
+        "RAG-System für personalisierte Knowledge Base",
+        "Analyse der Journal-Einträge für besseres Tracking und Verständnis der Heilung"
       ],
       "cta": "Benachrichtigung erhalten",
       "badge": "Coming Soon"
     }
   },
   "finalCta": {
-    "title": "Starte deine Wellness-Reise heute",
-    "subtitle": "Organisiere deine Naturheilkunde-Rezepte und verbessere deine Gesundheit auf natürliche Weise",
+    "title": "Bereit für mehr Klarheit in deiner Gesundheit?",
+    "subtitle": "Tausende nutzen bereits LONO Notes für ihre natürliche Gesundheit. Starte jetzt kostenlos – keine Kreditkarte erforderlich.",
     "emailPlaceholder": "Deine E-Mail-Adresse",
-    "emailCta": "Benachrichtigen bei Pro-Launch",
-    "downloadCta": "App herunterladen"
+    "emailCta": "Früher Zugang sichern",
+    "downloadCta": "Kostenlos herunterladen"
   },
   "footer": {
     "tagline": "Deine natürliche Gesundheit, organisiert.",

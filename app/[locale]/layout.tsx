@@ -1,15 +1,16 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
-import { Inter } from 'next/font/google';
+import { DM_Sans } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import type { ReactNode } from 'react';
 import type { Metadata } from 'next';
 import '../globals.css';
 
-const inter = Inter({
+const dmSans = DM_Sans({
   subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
   display: 'swap',
-  variable: '--font-sans',
+  variable: '--font-dm-sans',
 });
 
 type Props = {
@@ -98,7 +99,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={inter.variable}>
+    <html lang={locale} className={dmSans.variable}>
       <head>
         <link rel="icon" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -106,7 +107,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         <link rel="icon" type="image/png" sizes="512x512" href="/images/app-icon-3C4823@3x.png" />
         <meta name="theme-color" content="#556B2F" />
       </head>
-      <body className="antialiased">
+      <body className={`${dmSans.className} antialiased`}>
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

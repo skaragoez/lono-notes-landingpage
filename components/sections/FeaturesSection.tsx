@@ -1,84 +1,101 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import Card from '@/components/ui/Card';
 import AnimatedSection from '@/components/ui/AnimatedSection';
-import { BookOpen, TrendingUp, Sparkles, Smartphone } from 'lucide-react';
+import { FileText, TrendingUp, Target, BookOpen, CheckCircle } from 'lucide-react';
 
 export default function FeaturesSection() {
   const t = useTranslations('features');
 
   const features = [
     {
-      icon: BookOpen,
-      title: t('organization.title'),
-      description: t('organization.description'),
-      color: 'from-blue-500 to-cyan-500',
+      icon: FileText,
+      title: t('cards.0.title'),
+      description: t('cards.0.description'),
     },
     {
       icon: TrendingUp,
-      title: t('tracking.title'),
-      description: t('tracking.description'),
-      color: 'from-purple-500 to-pink-500',
+      title: t('cards.1.title'),
+      description: t('cards.1.description'),
     },
     {
-      icon: Sparkles,
-      title: t('insights.title'),
-      description: t('insights.description'),
-      color: 'from-amber-500 to-orange-500',
+      icon: Target,
+      title: t('cards.2.title'),
+      description: t('cards.2.description'),
     },
     {
-      icon: Smartphone,
-      title: t('accessible.title'),
-      description: t('accessible.description'),
-      color: 'from-green-500 to-emerald-500',
+      icon: BookOpen,
+      title: t('cards.3.title'),
+      description: t('cards.3.description'),
     },
   ];
 
   return (
-    <section id="features" className="section-padding bg-gradient-to-b from-white to-[var(--color-subtle)]/30 pattern-grid relative overflow-hidden">
-      {/* Floating Particles */}
-      <div className="absolute top-20 right-20 w-32 h-32 bg-[var(--color-primary)] opacity-10 rounded-full blur-2xl particle" />
-      <div className="absolute bottom-40 left-20 w-40 h-40 bg-[var(--color-secondary)] opacity-10 rounded-full blur-2xl particle" style={{ animationDelay: '3s' }} />
-      
-      <div className="container mx-auto relative z-10">
-        <div className="text-center mb-12">
-          <h2 className="mb-4">{t('title')}</h2>
-          <p className="text-lg text-[var(--color-text)] max-w-2xl mx-auto leading-relaxed">
-            {t('subtitle')}
-          </p>
-        </div>
+    <section id="features" className="relative min-h-screen flex items-center py-20">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/frau-naturheilkunde-enthusiast.png"
+          alt="Natural Medicine Enthusiast"
+          fill
+          className="object-cover"
+          quality={90}
+        />
+        {/* Dark Overlay for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/60" />
+      </div>
 
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
-          {features.map((feature, index) => (
-            <AnimatedSection key={index} delay={index * 0.1}>
-              <Card
-                hover
-                className="group h-full hover-lift glass relative overflow-hidden"
-              >
-              {/* Hover Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-[var(--color-primary)]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              
-              <div className="relative z-10">
-                <div className={`mb-4 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br ${feature.color} text-white shadow-md transition-all group-hover:scale-110 group-hover:rotate-3 glow-pulse`}>
-                  <feature.icon className="h-7 w-7" />
-                </div>
-                <h3 className="mb-2.5 text-lg font-bold text-[var(--color-text-dark)] group-hover:text-gradient transition-all">
-                  {feature.title}
-                </h3>
-                <p className="text-sm text-[var(--color-text)] leading-relaxed">
-                  {feature.description}
-                </p>
-              </div>
-              
-              {/* Shimmer Effect on Hover */}
-              <div className="absolute inset-0 shimmer opacity-0 group-hover:opacity-100" />
-              </Card>
-            </AnimatedSection>
-          ))}
+      {/* Content */}
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="flex flex-col min-h-[85vh]">
+          {/* Text - Links, 50% max-width */}
+          <div className="pt-8 lg:pt-16">
+            <div className="w-full lg:max-w-[50%] text-left">
+              <h2 className="mb-6 text-white drop-shadow-lg">{t('title')}</h2>
+              <p className="text-base lg:text-lg text-white/90 drop-shadow-md leading-relaxed mb-6">
+                {t('intro')}
+              </p>
+              <ul className="space-y-3 text-white/90">
+                {[0, 1, 2, 3].map((i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-1" />
+                    <span className="text-base lg:text-lg drop-shadow-md">{t(`list.${i}`)}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Spacer */}
+          <div className="flex-1" />
+
+          {/* Feature Cards - Unten */}
+          <div className="pb-8 lg:pb-12">
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 max-w-7xl">
+              {features.map((feature, index) => (
+                <AnimatedSection key={index} delay={index * 0.1}>
+                  <Card
+                    hover
+                    className="group h-full backdrop-blur-sm bg-white/95"
+                  >
+                  <div className="mb-4">
+                    <feature.icon className="h-12 w-12 text-[var(--color-primary)] transition-transform group-hover:scale-110" />
+                  </div>
+                  <h3 className="mb-3 text-xl font-bold text-[var(--color-text-dark)]">
+                    {feature.title}
+                  </h3>
+                  <p className="text-sm text-[var(--color-text)] leading-relaxed">
+                    {feature.description}
+                  </p>
+                  </Card>
+                </AnimatedSection>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
   );
 }
-

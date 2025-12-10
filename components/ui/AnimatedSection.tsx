@@ -21,12 +21,12 @@ export default function AnimatedSection({
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 30, scale: 0.95 }}
-      animate={isInView ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 30, scale: 0.95 }}
+      initial={{ opacity: 0, y: 50 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{
-        duration: 0.5,
+        duration: 0.6,
         delay,
-        ease: [0.34, 1.56, 0.64, 1],
+        ease: 'easeOut',
       }}
       className={className}
     >

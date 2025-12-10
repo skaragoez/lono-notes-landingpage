@@ -33,15 +33,15 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'glass shadow-lg border-b border-white/20'
+          ? 'bg-white/90 backdrop-blur-md shadow-md'
           : 'bg-transparent'
       }`}
     >
-      <nav className="container mx-auto flex items-center justify-between px-4 py-3.5">
+      <nav className="container mx-auto flex items-center justify-between px-4 py-4 lg:grid lg:grid-cols-3">
         {/* Logo */}
-        <Link href={`/${locale}`} className="flex items-center gap-3 hover:scale-105 transition-transform">
+        <Link href={`/${locale}`} className="flex items-center gap-3">
           <Image
             src="/images/lono-notes@2x.png"
             alt="LONO Notes Logo"
@@ -52,13 +52,13 @@ export default function Header() {
           />
         </Link>
 
-        {/* Desktop Navigation */}
-        <div className="hidden items-center gap-7 md:flex">
+        {/* Desktop Navigation - Centered */}
+        <div className="hidden items-center justify-center gap-10 lg:flex">
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-[var(--color-text)] transition-colors hover:text-[var(--color-primary)] relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[var(--color-primary)] after:transition-all hover:after:w-full"
+              className="relative text-base font-semibold text-[var(--color-text-dark)] transition-all duration-300 hover:text-[var(--color-primary)] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[var(--color-primary)] after:transition-all after:duration-300 hover:after:w-full"
             >
               {item.label}
             </a>
@@ -66,13 +66,13 @@ export default function Header() {
         </div>
 
         {/* Desktop CTA & Language Switcher */}
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="hidden items-center justify-end gap-4 lg:flex">
           <LanguageSwitcher />
-          <Button size="md" className="hover-glow glow-primary">{t('download')}</Button>
+          <Button size="md">{t('download')}</Button>
         </div>
 
-        {/* Mobile Menu Button */}
-        <div className="flex items-center gap-2 md:hidden">
+        {/* Mobile/Tablet Menu Button */}
+        <div className="flex items-center gap-2 lg:hidden">
           <LanguageSwitcher />
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -88,16 +88,16 @@ export default function Header() {
         </div>
       </nav>
 
-      {/* Mobile Menu */}
+      {/* Mobile/Tablet Menu */}
       {isMobileMenuOpen && (
-        <div className="border-t border-gray-200 bg-white md:hidden">
-          <div className="container mx-auto space-y-4 px-4 py-6">
+        <div className="border-t border-gray-200 bg-white lg:hidden">
+          <div className="container mx-auto space-y-2 px-4 py-6">
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="block text-base font-medium text-[var(--color-text)] transition-colors hover:text-[var(--color-primary)]"
+                className="block rounded-lg px-4 py-3 text-base font-semibold text-[var(--color-text-dark)] transition-all duration-300 hover:bg-[var(--color-primary)] hover:text-white hover:pl-6"
               >
                 {item.label}
               </a>

@@ -6,15 +6,15 @@
     "download": "Şimdi indir"
   },
   "hero": {
-    "headline": "Doğal Tıp Bilginizi Tek Yerde Düzenleyin",
-    "subheadline": "Tariflerdeki kaosa son. LONO Notes, bitkisel ilaçlarınızı, semptomlarınızı ve sağlık hedeflerinizi kolayca yönetmenize yardımcı olur.",
+    "headline": "Doğal Tıp Tarifleriniz. Sonunda Düzenli.",
+    "subheadline": "Size neyin yardımcı olduğunu bir daha asla unutmayın. LONO Notes ile tüm tarifler, semptomlar ve ilerlemeler tek yerde – her zaman elinizin altında.",
     "cta": "Ücretsiz Başla",
     "ctaSecondary": "Daha Fazla Bilgi",
     "trustElement": "10.000+ wellness tutkunu bize güveniyor"
   },
   "problem": {
     "title": "Tanıdık Geliyor mu?",
-    "subtitle": "Doğal tıp tariflerin her yere dağılmış durumda",
+    "subtitle": "Sistem olmadan sağlığınız hakkında değerli bilgiler kaybediyorsunuz",
     "pain1": "Hangi çay migrenim için yardımcı olmuştu?",
     "pain2": "O aynısefa merhemi tarifi neredeydi?",
     "pain3": "Geçen sefer hangi sargıyı kullanmıştım?",
@@ -22,42 +22,62 @@
   },
   "features": {
     "title": "İhtiyacınız Olan Her Şey",
-    "subtitle": "Doğal sağlık yolculuğunuz için mükemmel uygulama",
-    "organization": {
-      "title": "Akıllı Organizasyon",
-      "description": "Tarifleri bitkiler & çaylar, yağlar & merhemler, banyolar & sargılar, beslenme kategorilerine ayırın"
-    },
-    "tracking": {
-      "title": "Semptom Takibi",
-      "description": "Uyku, enerji, ruh hali, ağrı ve sindirimi güzel grafiklerle takip edin"
-    },
-    "insights": {
-      "title": "Kişiselleştirilmiş İçgörüler",
-      "description": "İlgi alanlarınıza ve şikayetlerinize dayalı yapay zeka destekli içerik"
-    },
-    "accessible": {
-      "title": "Her Zaman Erişilebilir",
-      "description": "Sağlık verileriniz bulutta güvenle, tüm cihazlarınızda erişilebilir"
-    }
+    "intro": "Doğal sağlık yolculuğunuz için mükemmel uygulama.",
+    "list": [
+      "Bitkisel tariflerinizi etiketler ve kategorilerle düzenleyin",
+      "Semptomlarınızı günlük olarak sadece 5 saniyede takip edin",
+      "Şikayetler ve ilaçlar arasındaki bağlantıları keşfedin",
+      "Wellness hedeflerinize net bir görünümle ulaşın"
+    ],
+    "cards": [
+      {
+        "title": "Tarifleri Asla Kaybetmeyin",
+        "description": "Tariflerinizi etiketler ve kategorilerle düzenleyin – size neyin yardımcı olduğunu anında bulun."
+      },
+      {
+        "title": "Size Gerçekten Neyin Yardımcı Olduğunu Keşfedin",
+        "description": "Günlük semptomlarınızı 5 saniyede takip edin ve güzel grafiklerle bağlantıları keşfedin."
+      },
+      {
+        "title": "Hedefler Belirleyin, Başarıları Kutlayın",
+        "description": "Haftalık sağlık hedefleri tanımlayın ve ilerlemenizi otomatik olarak takip edin."
+      },
+      {
+        "title": "Size Uygun İçerik",
+        "description": "Şikayetlerinize ve hedeflerinize uygun tariflerle kişiselleştirilmiş bir akış elde edin."
+      }
+    ]
   },
   "howItWorks": {
     "title": "Nasıl Çalışır",
-    "subtitle": "Birkaç basit adımda düzenlenin",
+    "subtitle": "Düzenli doğal tıbbınıza 7 adımda",
     "step1": {
-      "title": "Tarifleri Ekleyin",
-      "description": "Doğal tıp tariflerinizi, bitkisel karışımlarınızı ve uygulamalarınızı ekleyin"
+      "title": "Not Ekleyin",
+      "description": "Etiketler ve kategorilerle doğal tıp tariflerinizi hızlı ve kolay oluşturun"
     },
     "step2": {
-      "title": "Semptomları Takip Edin",
-      "description": "Günlük semptomlarınızı ve şikayetlerinizi sağlık günlüğüne kaydedin"
+      "title": "Notları Bulun",
+      "description": "Akıllı arama ve etiket ve kategori filtreleriyle herhangi bir tarifi anında bulun"
     },
     "step3": {
-      "title": "Bağlantıları Keşfedin",
-      "description": "Hangi ilaçların sizin için en iyi çalıştığını öğrenin"
+      "title": "Günlük Tutun",
+      "description": "Günlük deneyimlerinizi, uygulamalarınızı ve gözlemlerinizi belgeleyin"
     },
     "step4": {
-      "title": "Hedeflere Ulaşın",
-      "description": "Haftalık sağlık hedefleri belirleyin ve ilerlemenizi takip edin"
+      "title": "Semptomları Takip Edin",
+      "description": "Uyku, enerji, ruh hali ve ağrı gibi semptomlarınızı sadece 5 saniyede takip edin"
+    },
+    "step5": {
+      "title": "Haftalık İnceleme",
+      "description": "İlerlemenizi haftalık olarak yansıtın ve sağlığınızdaki kalıpları tanıyın"
+    },
+    "step6": {
+      "title": "Hedefler Belirleyin",
+      "description": "Sağlık hedefleri tanımlayın ve ilerlemenizi otomatik olarak takip edin"
+    },
+    "step7": {
+      "title": "Yakında Geliyor",
+      "description": "Yapay zeka destekli öneriler, RAG sistemi ve akıllı analizler için dört gözle bekleyin"
     }
   },
   "socialProof": {
@@ -92,40 +112,66 @@
     }
   },
   "pricing": {
-    "title": "Ücretsiz Başlayın, Sonra Daha Fazlasını Keşfedin",
-    "subtitle": "LONO Notes kullanımı ücretsizdir. Pro özellikler yakında!",
+    "title": "Ücretsiz Başlayın – Hazır Olduğunuzda Yükseltin",
+    "subtitle": "Bugün ücretsiz sürümle başlayın. Gelişmiş özellikler yakında!",
+    "billingToggle": {
+      "monthly": "Aylık",
+      "yearly": "Yıllık",
+      "save": "%20 Tasarruf"
+    },
     "free": {
       "title": "Ücretsiz",
-      "price": "Ücretsiz",
+      "price": "0₺ – Sonsuza Dek",
       "features": [
-        "Sınırsız tarif",
-        "Semptom takibi",
-        "Sağlık günlüğü",
-        "Kişiselleştirilmiş akış",
-        "Hedef belirleme"
+        "Önceden tanımlanmış etiketler ve kategorilerle sınırsız notlar",
+        "Sınırsız günlük girişleri"
       ],
-      "cta": "Başlayın"
+      "cta": "Ücretsiz Başla"
     },
-    "pro": {
-      "title": "Pro (Yakında)",
-      "price": "Yakında Mevcut",
+    "basis": {
+      "title": "Temel",
+      "priceMonthly": "7,99€",
+      "priceYearly": "76,99€",
+      "pricePeriod": {
+        "monthly": "/ ay",
+        "yearly": "/ yıl"
+      },
       "features": [
         "Ücretsiz'deki her şey",
-        "Doğal Tıp için Yapay Zeka Chatbot",
-        "E-Kitaplarınız için RAG Sistemi",
-        "Gelişmiş Analizler",
-        "Öncelikli Destek"
+        "Kişiselleştirilmiş Etiketler",
+        "Kişiselleştirilmiş Kategoriler",
+        "Semptom Takibi",
+        "Haftalık İnceleme",
+        "Hedefler",
+        "İlerleme Panosu"
+      ],
+      "cta": "Şimdi Yükselt",
+      "badge": "Tavsiye Edilen"
+    },
+    "pro": {
+      "title": "Pro",
+      "priceMonthly": "14,99€",
+      "priceYearly": "143,99€",
+      "pricePeriod": {
+        "monthly": "/ ay",
+        "yearly": "/ yıl"
+      },
+      "features": [
+        "Temel'deki her şey",
+        "Yapay Zeka Doğal Tıp Danışmanı",
+        "Kişiselleştirilmiş Bilgi Tabanı için RAG Sistemi",
+        "Daha iyi takip ve iyileşme anlayışı için günlük girişlerinin analizi"
       ],
       "cta": "Bildirim Al",
       "badge": "Yakında"
     }
   },
   "finalCta": {
-    "title": "Wellness Yolculuğunuza Bugün Başlayın",
-    "subtitle": "Doğal tıp tariflerinizi düzenleyin ve sağlığınızı doğal yollarla iyileştirin",
+    "title": "Sağlığınızda Daha Fazla Netlik İçin Hazır mısınız?",
+    "subtitle": "Binlerce kişi doğal sağlıkları için LONO Notes kullanıyor. Bugün ücretsiz başlayın – kredi kartı gerekmez.",
     "emailPlaceholder": "E-posta adresiniz",
-    "emailCta": "Pro Lansmanı için Beni Bilgilendir",
-    "downloadCta": "Uygulamayı İndir"
+    "emailCta": "Erken Erişim Al",
+    "downloadCta": "Ücretsiz İndir"
   },
   "footer": {
     "tagline": "Doğal sağlığınız, düzenli.",

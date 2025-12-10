@@ -1,12 +1,14 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { useState } from 'react';
 import Card from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 import { Check, Sparkles } from 'lucide-react';
 
 export default function PricingSection() {
   const t = useTranslations('pricing');
+  const [isYearly, setIsYearly] = useState(false);
 
   const freePlan = {
     title: t('free.title'),
@@ -14,91 +16,130 @@ export default function PricingSection() {
     features: [
       t('free.features.0'),
       t('free.features.1'),
-      t('free.features.2'),
-      t('free.features.3'),
-      t('free.features.4'),
     ],
     cta: t('free.cta'),
     highlighted: false,
     badge: undefined,
   };
 
+  const basisPlan = {
+    title: t('basis.title'),
+    priceMonthly: t('basis.priceMonthly'),
+    priceYearly: t('basis.priceYearly'),
+    pricePeriod: isYearly ? t('basis.pricePeriod.yearly') : t('basis.pricePeriod.monthly'),
+    badge: t('basis.badge'),
+    features: [
+      t('basis.features.0'),
+      t('basis.features.1'),
+      t('basis.features.2'),
+      t('basis.features.3'),
+      t('basis.features.4'),
+      t('basis.features.5'),
+      t('basis.features.6'),
+    ],
+    cta: t('basis.cta'),
+    highlighted: true,
+  };
+
   const proPlan = {
     title: t('pro.title'),
-    price: t('pro.price'),
+    priceMonthly: t('pro.priceMonthly'),
+    priceYearly: t('pro.priceYearly'),
+    pricePeriod: isYearly ? t('pro.pricePeriod.yearly') : t('pro.pricePeriod.monthly'),
     badge: t('pro.badge'),
     features: [
       t('pro.features.0'),
       t('pro.features.1'),
       t('pro.features.2'),
       t('pro.features.3'),
-      t('pro.features.4'),
     ],
     cta: t('pro.cta'),
-    highlighted: true,
+    highlighted: false,
   };
 
-  const plans = [freePlan, proPlan];
+  const plans = [freePlan, basisPlan, proPlan];
 
   return (
-    <section id="pricing" className="section-padding bg-gradient-to-b from-white to-[var(--color-subtle)]/20 pattern-grid relative overflow-hidden">
-      {/* Decorative Elements */}
-      <div className="absolute top-20 left-20 w-64 h-64 bg-[var(--color-primary)] opacity-5 rounded-full blur-3xl particle" />
-      <div className="absolute bottom-20 right-20 w-80 h-80 bg-[var(--color-secondary)] opacity-5 rounded-full blur-3xl float-smooth" style={{ animationDelay: '2s' }} />
-      
-      <div className="container mx-auto relative z-10">
+    <section id="pricing" className="section-padding bg-white">
+      <div className="container mx-auto">
         {/* Title */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <h2 className="mb-4">{t('title')}</h2>
-          <p className="text-lg text-[var(--color-text)] max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-[var(--color-text)] max-w-2xl mx-auto mb-8">
             {t('subtitle')}
           </p>
+
+          {/* Billing Toggle */}
+          <div className="flex items-center justify-center gap-4 mt-8">
+            <span className={`text-sm font-medium transition-colors ${!isYearly ? 'text-[var(--color-text-dark)]' : 'text-[var(--color-text)]'}`}>
+              {t('billingToggle.monthly')}
+            </span>
+            <button
+              onClick={() => setIsYearly(!isYearly)}
+              className="relative inline-flex h-8 w-16 items-center rounded-full bg-gray-300 transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:ring-offset-2"
+              style={{ backgroundColor: isYearly ? 'var(--color-primary)' : '' }}
+            >
+              <span
+                className={`inline-block h-6 w-6 transform rounded-full bg-white shadow-lg transition-transform ${
+                  isYearly ? 'translate-x-9' : 'translate-x-1'
+                }`}
+              />
+            </button>
+            <span className={`text-sm font-medium transition-colors ${isYearly ? 'text-[var(--color-text-dark)]' : 'text-[var(--color-text)]'}`}>
+              {t('billingToggle.yearly')}
+            </span>
+            {isYearly && (
+              <span className="ml-2 rounded-full bg-green-100 px-3 py-1 text-xs font-semibold text-green-700">
+                {t('billingToggle.save')}
+              </span>
+            )}
+          </div>
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {plans.map((plan, index) => (
             <Card
               key={index}
-              className={`relative overflow-hidden group ${
+              className={`relative ${
                 plan.highlighted
-                  ? 'gradient-border glow-primary hover-lift'
-                  : 'glass hover-lift'
+                  ? 'border-2 border-[var(--color-primary)] shadow-2xl'
+                  : ''
               }`}
             >
-              {/* Animated Background for Highlighted Card */}
-              {plan.highlighted && (
-                <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-primary)]/5 via-transparent to-[var(--color-secondary)]/5 gradient-animated" />
-              )}
-              
               {/* Badge */}
               {plan.badge && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-20">
-                  <div className="flex items-center gap-1 bg-gradient-to-r from-[var(--color-accent)] to-[var(--color-warning)] text-white px-3.5 py-1 rounded-full text-xs font-bold shadow-lg glow-pulse magnetic">
-                    <Sparkles className="h-3.5 w-3.5 animate-spin" style={{ animationDuration: '3s' }} />
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                  <div className="flex items-center gap-1 bg-gradient-to-r from-[var(--color-accent)] to-[var(--color-warning)] text-white px-4 py-1 rounded-full text-sm font-bold shadow-lg">
+                    <Sparkles className="h-4 w-4" />
                     {plan.badge}
                   </div>
                 </div>
               )}
 
               {/* Plan Header */}
-              <div className="text-center mb-6 mt-2 relative z-10">
-                <h3 className={`text-xl font-bold mb-2 ${plan.highlighted ? 'text-gradient' : 'text-[var(--color-text-dark)]'}`}>
+              <div className="text-center mb-6 mt-2">
+                <h3 className="text-2xl font-bold text-[var(--color-text-dark)] mb-2">
                   {plan.title}
                 </h3>
-                <div className={`text-3xl font-extrabold ${plan.highlighted ? 'text-gradient' : 'text-[var(--color-primary)]'}`}>
-                  {plan.price}
+                <div className="text-4xl font-extrabold text-[var(--color-primary)]">
+                  {'priceMonthly' in plan ? (isYearly ? plan.priceYearly : plan.priceMonthly) : plan.price}
+                  {('pricePeriod' in plan) && (
+                    <span className="text-lg font-normal text-[var(--color-text)] ml-1">
+                      {plan.pricePeriod}
+                    </span>
+                  )}
                 </div>
               </div>
 
               {/* Features List */}
-              <ul className="space-y-3 mb-7 relative z-10">
+              <ul className="space-y-4 mb-8">
                 {plan.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-start gap-2.5 group/item">
+                  <li key={featureIndex} className="flex items-start gap-3">
                     <div className="flex-shrink-0 mt-0.5">
-                      <Check className="h-4.5 w-4.5 text-[var(--color-secondary)] group-hover/item:scale-125 transition-transform" />
+                      <Check className="h-5 w-5 text-[var(--color-secondary)]" />
                     </div>
-                    <span className="text-sm text-[var(--color-text)] leading-relaxed group-hover/item:text-[var(--color-text-dark)] transition-colors">{feature}</span>
+                    <span className="text-[var(--color-text)]">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -106,14 +147,11 @@ export default function PricingSection() {
               {/* CTA Button */}
               <Button
                 variant={plan.highlighted ? 'primary' : 'outline'}
-                className={`w-full relative z-10 ${plan.highlighted ? 'hover-glow' : 'magnetic'}`}
+                className="w-full"
                 size="lg"
               >
                 {plan.cta}
               </Button>
-              
-              {/* Shimmer Effect */}
-              <div className="absolute inset-0 shimmer opacity-0 group-hover:opacity-100" />
             </Card>
           ))}
         </div>

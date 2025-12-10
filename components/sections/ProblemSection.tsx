@@ -1,77 +1,160 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { useParams } from 'next/navigation';
 import Image from 'next/image';
-import { FileQuestion, Search, BookX, Shuffle } from 'lucide-react';
+import Button from '@/components/ui/Button';
+import { Check, Download } from 'lucide-react';
 
 export default function ProblemSection() {
   const t = useTranslations('problem');
+  const params = useParams();
+  const locale = params.locale as string;
 
-  const painPoints = [
-    { icon: Search, text: t('pain1') },
-    { icon: FileQuestion, text: t('pain2') },
-    { icon: BookX, text: t('pain3') },
-    { icon: Shuffle, text: t('pain4') },
+  // Map locale to App Store badge
+  const appStoreBadges: Record<string, string> = {
+    de: '/images/Download_on_the_App_Store_Badge_DE_RGB_blk_092917.svg',
+    en: '/images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg',
+    tr: '/images/Download_on_the_App_Store_Badge_TR_RGB_blk_100217.svg',
+  };
+
+  const problems = [
+    {
+      image: '/images/frau-mit-migreane-sucht-nach-rezept.png',
+      title: t('pain1'),
+      description: 'Deine wichtigsten Heilmittel sind über verschiedene Notizen verstreut. Wenn du sie wirklich brauchst, findest du sie nicht.',
+    },
+    {
+      image: '/images/frau-schaut-nach-etwas-im-regal.png',
+      title: 'Welches Mittel hat bei meinen Symptomen geholfen?',
+      description: 'Du kannst dich nicht mehr erinnern, welches Heilmittel dir beim letzten Mal wirklich geholfen hat. War es Ingwer oder Kamille? Welche Dosierung?',
+    },
+    {
+      image: '/images/frau-ist-verloren-im-notizen-jungel.png',
+      title: t('pain4'),
+      description: 'Unübersichtliche Notizen machen es unmöglich, den Überblick zu behalten.',
+    },
+    {
+      image: '/images/mockup.png',
+      title: 'Die Lösung: LONO Notes',
+      description: 'Schluss mit dem Chaos! Mit LONO Notes hast du endlich alles unter Kontrolle.',
+      benefits: [
+        'Alle Rezepte an einem Ort',
+        'Symptome tracken und Muster erkennen',
+        'Fortschritte sichtbar machen',
+        'Gesundheitsziele erreichen',
+      ],
+    },
   ];
 
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto">
-        <div className="text-center mb-10">
+        {/* Header */}
+        <div className="text-center mb-16 max-w-3xl mx-auto">
           <h2 className="mb-4">{t('title')}</h2>
-          <p className="text-lg text-[var(--color-text)] max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-600">
             {t('subtitle')}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
-          {painPoints.map((point, index) => (
-            <div
-              key={index}
-              className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-red-50/80 to-orange-50/80 p-5 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl border border-red-100/50 hover-lift glass"
-            >
-              {/* Animated Background Glow */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-warning)]/10 to-[var(--color-accent)]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              
-              <div className="relative z-10">
-                <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-[var(--color-warning)] text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 glow-pulse">
-                  <point.icon className="h-6 w-6 group-hover:scale-110 transition-transform" />
-                </div>
-                <p className="text-sm font-medium text-[var(--color-text-dark)] leading-relaxed">
-                  {point.text}
-                </p>
-              </div>
-              
-              {/* Pulsing Background Circle */}
-              <div className="absolute -right-8 -bottom-8 h-32 w-32 rounded-full bg-[var(--color-warning)] opacity-5 group-hover:opacity-10 transition-opacity scale-pulse" />
-              
-              {/* Shimmer on Hover */}
-              <div className="absolute inset-0 shimmer opacity-0 group-hover:opacity-100" />
-            </div>
-          ))}
-        </div>
+        {/* Alternating Layout */}
+        <div className="space-y-24">
+          {problems.map((problem, index) => {
+            const isEven = index % 2 === 0;
+            const isLast = index === problems.length - 1;
 
-        {/* Visual Divider with App Icon */}
-        <div className="mt-12 flex items-center justify-center">
-          <div className="flex items-center gap-4">
-            <div className="h-1 w-16 rounded-full bg-gradient-to-r from-[var(--color-warning)] via-[var(--color-accent)] to-transparent gradient-animated" />
-            <div className="relative magnetic">
-              <div className="absolute inset-0 bg-[var(--color-primary)] opacity-30 blur-2xl rounded-full glow-pulse" />
-              <div className="relative z-10 p-2 rounded-2xl glass">
-                <Image
-                  src="/images/app-icon-raw.png"
-                  alt="LONO Notes"
-                  width={56}
-                  height={56}
-                  className="drop-shadow-2xl float-smooth"
-                />
+            return (
+              <div
+                key={index}
+                className={`grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32 items-center ${
+                  isLast ? 'bg-gradient-to-br from-[var(--color-subtle)] to-white rounded-3xl p-8 lg:p-12' : ''
+                }`}
+              >
+                {/* Image */}
+                <div className={`relative ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
+                  <div className={`relative ${isLast ? 'flex items-center justify-center' : 'aspect-[4/3]'}`}>
+                    {!isLast && (
+                      <div className="absolute inset-0 rounded-[3rem] overflow-hidden">
+                        <Image
+                          src={problem.image}
+                          alt={problem.title}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    )}
+                    {isLast && (
+                      <Image
+                        src={problem.image}
+                        alt={problem.title}
+                        width={300}
+                        height={650}
+                        className="h-auto max-h-[500px] w-auto drop-shadow-2xl"
+                      />
+                    )}
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className={`${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
+                  <div className={`max-w-lg ${isEven ? '' : 'lg:ml-auto'}`}>
+                    <h3 className="text-3xl font-bold text-gray-900 mb-4">
+                      {problem.title}
+                    </h3>
+                    <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                      {problem.description}
+                    </p>
+
+                    {/* Benefits List - nur bei Lösung */}
+                    {isLast && 'benefits' in problem && (
+                      <ul className="space-y-3 mb-8">
+                        {problem.benefits.map((benefit: string, i: number) => (
+                          <li key={i} className="flex items-start gap-3">
+                            <div className="flex-shrink-0 mt-1">
+                              <div className="w-5 h-5 rounded-full bg-green-500 flex items-center justify-center">
+                                <Check className="w-3 h-3 text-white" />
+                              </div>
+                            </div>
+                            <span className="text-gray-700 font-medium">{benefit}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+
+                    {/* CTA Buttons - nur bei Lösung */}
+                    {isLast && (
+                      <div className="space-y-4">
+                        <Button size="lg" className="w-full sm:w-auto gap-2">
+                          <Download className="w-5 h-5" />
+                          Jetzt kostenlos herunterladen
+                        </Button>
+                        
+                        <div className="flex justify-start">
+                          <a 
+                            href="https://apps.apple.com" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="transition-transform hover:scale-105"
+                          >
+                            <Image
+                              src={appStoreBadges[locale] || appStoreBadges.en}
+                              alt="Download on the App Store"
+                              width={160}
+                              height={48}
+                              className="h-[48px] w-auto"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="h-1 w-16 rounded-full bg-gradient-to-r from-transparent via-[var(--color-secondary)] to-[var(--color-primary)] gradient-animated" />
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>
   );
 }
-
