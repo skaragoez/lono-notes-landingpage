@@ -36,26 +36,26 @@ export default function FeaturesSection() {
   ];
 
   return (
-    <section id="features" className="section-padding bg-gradient-to-b from-white to-[var(--color-subtle)]">
+    <section id="features" className="section-padding bg-gradient-to-b from-white to-[var(--color-subtle)]/30">
       <div className="container mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="mb-4">{t('title')}</h2>
-          <p className="text-lg text-[var(--color-text)] max-w-2xl mx-auto">
+          <p className="text-lg text-[var(--color-text)] max-w-2xl mx-auto leading-relaxed">
             {t('subtitle')}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
           {features.map((feature, index) => (
             <AnimatedSection key={index} delay={index * 0.1}>
               <Card
                 hover
                 className="group h-full"
               >
-              <div className={`mb-4 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br ${feature.color} text-white shadow-lg transition-transform group-hover:scale-110`}>
-                <feature.icon className="h-8 w-8" />
+              <div className={`mb-4 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br ${feature.color} text-white shadow-sm transition-transform group-hover:scale-105`}>
+                <feature.icon className="h-7 w-7" />
               </div>
-              <h3 className="mb-3 text-xl font-bold text-[var(--color-text-dark)]">
+              <h3 className="mb-2.5 text-lg font-bold text-[var(--color-text-dark)]">
                 {feature.title}
               </h3>
               <p className="text-sm text-[var(--color-text)] leading-relaxed">

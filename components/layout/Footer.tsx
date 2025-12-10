@@ -39,36 +39,36 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-gray-50 pt-16 pb-8">
+    <footer className="bg-gray-50/50 pt-12 pb-6">
       <div className="container mx-auto px-4">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5 mb-12">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5 mb-10">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <div className="mb-4">
+            <div className="mb-3.5">
               <Image
                 src="/images/lono-notes@2x.png"
                 alt="LONO Notes Logo"
-                width={160}
-                height={40}
-                className="h-10 w-auto"
+                width={140}
+                height={35}
+                className="h-9 w-auto"
               />
             </div>
-            <p className="text-[var(--color-text)] mb-4 max-w-sm">
+            <p className="text-sm text-[var(--color-text-light)] mb-4 max-w-sm leading-relaxed">
               {t('tagline')}
             </p>
             {/* Social Links */}
-            <div className="flex gap-4">
+            <div className="flex gap-3">
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-white text-[var(--color-text)] transition-all hover:bg-[var(--color-primary)] hover:text-white shadow-sm"
+                  className="flex h-9 w-9 items-center justify-center rounded-lg bg-white text-[var(--color-text)] transition-all hover:bg-[var(--color-primary)] hover:text-white shadow-sm border border-gray-100"
                   aria-label={social.label}
                 >
-                  <social.icon className="h-5 w-5" />
+                  <social.icon className="h-4.5 w-4.5" />
                 </a>
               ))}
             </div>
@@ -76,7 +76,7 @@ export default function Footer() {
 
           {/* Product Links */}
           <div>
-            <h3 className="mb-4 text-sm font-bold uppercase tracking-wide text-[var(--color-text-dark)]">
+            <h3 className="mb-3.5 text-xs font-bold uppercase tracking-wider text-[var(--color-text-dark)]">
               {t('product.title')}
             </h3>
             <ul className="space-y-2">
@@ -84,7 +84,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-sm text-[var(--color-text)] transition-colors hover:text-[var(--color-primary)]"
+                    className="text-sm text-[var(--color-text-light)] transition-colors hover:text-[var(--color-primary)]"
                   >
                     {link.label}
                   </a>
@@ -95,7 +95,7 @@ export default function Footer() {
 
           {/* Legal Links */}
           <div>
-            <h3 className="mb-4 text-sm font-bold uppercase tracking-wide text-[var(--color-text-dark)]">
+            <h3 className="mb-3.5 text-xs font-bold uppercase tracking-wider text-[var(--color-text-dark)]">
               {t('legal.title')}
             </h3>
             <ul className="space-y-2">
@@ -103,7 +103,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-[var(--color-text)] transition-colors hover:text-[var(--color-primary)]"
+                    className="text-sm text-[var(--color-text-light)] transition-colors hover:text-[var(--color-primary)]"
                   >
                     {link.label}
                   </Link>
@@ -114,7 +114,7 @@ export default function Footer() {
 
           {/* Support Links */}
           <div>
-            <h3 className="mb-4 text-sm font-bold uppercase tracking-wide text-[var(--color-text-dark)]">
+            <h3 className="mb-3.5 text-xs font-bold uppercase tracking-wider text-[var(--color-text-dark)]">
               {t('support.title')}
             </h3>
             <ul className="space-y-2">
@@ -122,7 +122,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-[var(--color-text)] transition-colors hover:text-[var(--color-primary)]"
+                    className="text-sm text-[var(--color-text-light)] transition-colors hover:text-[var(--color-primary)]"
                   >
                     {link.label}
                   </Link>
@@ -133,8 +133,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-200 pt-8">
-          <p className="text-center text-sm text-[var(--color-text)]">
+        <div className="border-t border-gray-200 pt-6">
+          <p className="text-center text-sm text-[var(--color-text-light)]">
             © {currentYear} LONO Notes. {t('copyright').split('. ')[1]}
           </p>
         </div>

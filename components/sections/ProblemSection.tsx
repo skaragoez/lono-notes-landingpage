@@ -17,45 +17,45 @@ export default function ProblemSection() {
   return (
     <section className="section-padding bg-white">
       <div className="container mx-auto">
-        <div className="text-center mb-12">
+        <div className="text-center mb-10">
           <h2 className="mb-4">{t('title')}</h2>
-          <p className="text-lg text-[var(--color-text)] max-w-2xl mx-auto">
+          <p className="text-lg text-[var(--color-text)] max-w-2xl mx-auto leading-relaxed">
             {t('subtitle')}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
           {painPoints.map((point, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-red-50 to-orange-50 p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
+              className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-red-50/80 to-orange-50/80 p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-md border border-red-100/50"
             >
-              <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-[var(--color-warning)] text-white transition-transform group-hover:scale-110">
-                <point.icon className="h-7 w-7" />
+              <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-[var(--color-warning)] text-white transition-transform group-hover:scale-105">
+                <point.icon className="h-6 w-6" />
               </div>
-              <p className="text-sm font-medium text-[var(--color-text-dark)]">
+              <p className="text-sm font-medium text-[var(--color-text-dark)] leading-relaxed">
                 {point.text}
               </p>
-              <div className="absolute -right-8 -bottom-8 h-32 w-32 rounded-full bg-[var(--color-warning)] opacity-5" />
+              <div className="absolute -right-8 -bottom-8 h-32 w-32 rounded-full bg-[var(--color-warning)] opacity-3" />
             </div>
           ))}
         </div>
 
         {/* Visual Divider with App Icon */}
-        <div className="mt-16 flex items-center justify-center">
+        <div className="mt-12 flex items-center justify-center">
           <div className="flex items-center gap-4">
-            <div className="h-1 w-12 rounded-full bg-gradient-to-r from-[var(--color-warning)] to-transparent" />
+            <div className="h-0.5 w-12 rounded-full bg-gradient-to-r from-[var(--color-warning)] to-transparent opacity-50" />
             <div className="relative">
-              <div className="absolute inset-0 bg-[var(--color-primary)] opacity-20 blur-2xl rounded-full" />
+              <div className="absolute inset-0 bg-[var(--color-primary)] opacity-10 blur-xl rounded-full" />
               <Image
                 src="/images/app-icon-raw.png"
                 alt="LONO Notes"
-                width={64}
-                height={64}
-                className="relative z-10 drop-shadow-xl animate-pulse"
+                width={48}
+                height={48}
+                className="relative z-10 drop-shadow-lg animate-pulse-subtle"
               />
             </div>
-            <div className="h-1 w-12 rounded-full bg-gradient-to-r from-transparent to-[var(--color-secondary)]" />
+            <div className="h-0.5 w-12 rounded-full bg-gradient-to-r from-transparent to-[var(--color-secondary)] opacity-50" />
           </div>
         </div>
       </div>

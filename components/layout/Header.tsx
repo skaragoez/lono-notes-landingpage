@@ -35,11 +35,11 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/90 backdrop-blur-md shadow-md'
+          ? 'bg-white/95 backdrop-blur-lg shadow-sm'
           : 'bg-transparent'
       }`}
     >
-      <nav className="container mx-auto flex items-center justify-between px-4 py-4">
+      <nav className="container mx-auto flex items-center justify-between px-4 py-3.5">
         {/* Logo */}
         <Link href={`/${locale}`} className="flex items-center gap-3">
           <Image
@@ -53,12 +53,12 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center gap-7 md:flex">
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-[var(--color-text)] transition-colors hover:text-[var(--color-primary)]"
+              className="text-sm font-medium text-[var(--color-text)] transition-colors hover:text-[var(--color-primary)] relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[var(--color-primary)] after:transition-all hover:after:w-full"
             >
               {item.label}
             </a>
@@ -66,9 +66,9 @@ export default function Header() {
         </div>
 
         {/* Desktop CTA & Language Switcher */}
-        <div className="hidden items-center gap-4 md:flex">
+        <div className="hidden items-center gap-3 md:flex">
           <LanguageSwitcher />
-          <Button size="md">{t('download')}</Button>
+          <Button size="md" className="shadow-sm">{t('download')}</Button>
         </div>
 
         {/* Mobile Menu Button */}

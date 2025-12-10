@@ -44,29 +44,29 @@ export default function PricingSection() {
     <section id="pricing" className="section-padding bg-white">
       <div className="container mx-auto">
         {/* Title */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="mb-4">{t('title')}</h2>
-          <p className="text-lg text-[var(--color-text)] max-w-2xl mx-auto">
+          <p className="text-lg text-[var(--color-text)] max-w-2xl mx-auto leading-relaxed">
             {t('subtitle')}
           </p>
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {plans.map((plan, index) => (
             <Card
               key={index}
               className={`relative ${
                 plan.highlighted
-                  ? 'border-2 border-[var(--color-primary)] shadow-2xl'
+                  ? 'border-2 border-[var(--color-primary)] shadow-lg'
                   : ''
               }`}
             >
               {/* Badge */}
               {plan.badge && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <div className="flex items-center gap-1 bg-gradient-to-r from-[var(--color-accent)] to-[var(--color-warning)] text-white px-4 py-1 rounded-full text-sm font-bold shadow-lg">
-                    <Sparkles className="h-4 w-4" />
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                  <div className="flex items-center gap-1 bg-gradient-to-r from-[var(--color-accent)] to-[var(--color-warning)] text-white px-3.5 py-1 rounded-full text-xs font-bold shadow-md">
+                    <Sparkles className="h-3.5 w-3.5" />
                     {plan.badge}
                   </div>
                 </div>
@@ -74,22 +74,22 @@ export default function PricingSection() {
 
               {/* Plan Header */}
               <div className="text-center mb-6 mt-2">
-                <h3 className="text-2xl font-bold text-[var(--color-text-dark)] mb-2">
+                <h3 className="text-xl font-bold text-[var(--color-text-dark)] mb-2">
                   {plan.title}
                 </h3>
-                <div className="text-4xl font-extrabold text-[var(--color-primary)]">
+                <div className="text-3xl font-extrabold text-[var(--color-primary)]">
                   {plan.price}
                 </div>
               </div>
 
               {/* Features List */}
-              <ul className="space-y-4 mb-8">
+              <ul className="space-y-3 mb-7">
                 {plan.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-start gap-3">
+                  <li key={featureIndex} className="flex items-start gap-2.5">
                     <div className="flex-shrink-0 mt-0.5">
-                      <Check className="h-5 w-5 text-[var(--color-secondary)]" />
+                      <Check className="h-4.5 w-4.5 text-[var(--color-secondary)]" />
                     </div>
-                    <span className="text-[var(--color-text)]">{feature}</span>
+                    <span className="text-sm text-[var(--color-text)] leading-relaxed">{feature}</span>
                   </li>
                 ))}
               </ul>

@@ -36,41 +36,41 @@ export default function HowItWorksSection() {
   return (
     <section id="how-it-works" className="section-padding bg-white">
       <div className="container mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="mb-4">{t('title')}</h2>
-          <p className="text-lg text-[var(--color-text)] max-w-2xl mx-auto">
+          <p className="text-lg text-[var(--color-text)] max-w-2xl mx-auto leading-relaxed">
             {t('subtitle')}
           </p>
         </div>
 
-        <div className="relative max-w-5xl mx-auto">
+        <div className="relative max-w-4xl mx-auto">
           {/* Timeline Line - Hidden on mobile */}
-          <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[var(--color-primary)] to-[var(--color-secondary)] transform -translate-x-1/2 hidden lg:block" />
+          <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-[var(--color-primary)]/30 to-[var(--color-secondary)]/30 transform -translate-x-1/2 hidden lg:block" />
 
-          <div className="space-y-16">
+          <div className="space-y-12 lg:space-y-14">
             {steps.map((step, index) => (
               <div
                 key={index}
-                className={`flex flex-col lg:flex-row items-center gap-8 ${
+                className={`flex flex-col lg:flex-row items-center gap-6 lg:gap-8 ${
                   index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
                 }`}
               >
                 {/* Content */}
                 <div className={`flex-1 ${index % 2 === 0 ? 'lg:text-right' : 'lg:text-left'} text-center`}>
-                  <div className="inline-block mb-4 px-4 py-1 bg-[var(--color-primary)] text-white rounded-full text-sm font-bold">
+                  <div className="inline-block mb-3 px-3.5 py-1 bg-[var(--color-primary)] text-white rounded-full text-xs font-bold tracking-wide">
                     {step.number}
                   </div>
-                  <h3 className="text-2xl font-bold text-[var(--color-text-dark)] mb-3">
+                  <h3 className="text-xl font-bold text-[var(--color-text-dark)] mb-2.5">
                     {step.title}
                   </h3>
-                  <p className="text-[var(--color-text)]">
+                  <p className="text-[var(--color-text)] leading-relaxed">
                     {step.description}
                   </p>
                 </div>
 
                 {/* Icon Circle */}
-                <div className="relative z-10 flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] text-white shadow-xl lg:h-24 lg:w-24">
-                  <step.icon className="h-10 w-10 lg:h-12 lg:w-12" />
+                <div className="relative z-10 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] text-white shadow-md lg:h-18 lg:w-18">
+                  <step.icon className="h-8 w-8 lg:h-9 lg:w-9" />
                 </div>
 
                 {/* Spacer */}
