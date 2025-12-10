@@ -33,15 +33,15 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? 'bg-white/95 backdrop-blur-lg shadow-sm'
+          ? 'glass shadow-lg border-b border-white/20'
           : 'bg-transparent'
       }`}
     >
       <nav className="container mx-auto flex items-center justify-between px-4 py-3.5">
         {/* Logo */}
-        <Link href={`/${locale}`} className="flex items-center gap-3">
+        <Link href={`/${locale}`} className="flex items-center gap-3 hover:scale-105 transition-transform">
           <Image
             src="/images/lono-notes@2x.png"
             alt="LONO Notes Logo"
@@ -68,7 +68,7 @@ export default function Header() {
         {/* Desktop CTA & Language Switcher */}
         <div className="hidden items-center gap-3 md:flex">
           <LanguageSwitcher />
-          <Button size="md" className="shadow-sm">{t('download')}</Button>
+          <Button size="md" className="hover-glow glow-primary">{t('download')}</Button>
         </div>
 
         {/* Mobile Menu Button */}

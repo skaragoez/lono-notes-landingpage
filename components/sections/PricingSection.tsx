@@ -41,8 +41,12 @@ export default function PricingSection() {
   const plans = [freePlan, proPlan];
 
   return (
-    <section id="pricing" className="section-padding bg-white">
-      <div className="container mx-auto">
+    <section id="pricing" className="section-padding bg-gradient-to-b from-white to-[var(--color-subtle)]/20 pattern-grid relative overflow-hidden">
+      {/* Decorative Elements */}
+      <div className="absolute top-20 left-20 w-64 h-64 bg-[var(--color-primary)] opacity-5 rounded-full blur-3xl particle" />
+      <div className="absolute bottom-20 right-20 w-80 h-80 bg-[var(--color-secondary)] opacity-5 rounded-full blur-3xl float-smooth" style={{ animationDelay: '2s' }} />
+      
+      <div className="container mx-auto relative z-10">
         {/* Title */}
         <div className="text-center mb-12">
           <h2 className="mb-4">{t('title')}</h2>
@@ -56,40 +60,45 @@ export default function PricingSection() {
           {plans.map((plan, index) => (
             <Card
               key={index}
-              className={`relative ${
+              className={`relative overflow-hidden group ${
                 plan.highlighted
-                  ? 'border-2 border-[var(--color-primary)] shadow-lg'
-                  : ''
+                  ? 'gradient-border glow-primary hover-lift'
+                  : 'glass hover-lift'
               }`}
             >
+              {/* Animated Background for Highlighted Card */}
+              {plan.highlighted && (
+                <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-primary)]/5 via-transparent to-[var(--color-secondary)]/5 gradient-animated" />
+              )}
+              
               {/* Badge */}
               {plan.badge && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                  <div className="flex items-center gap-1 bg-gradient-to-r from-[var(--color-accent)] to-[var(--color-warning)] text-white px-3.5 py-1 rounded-full text-xs font-bold shadow-md">
-                    <Sparkles className="h-3.5 w-3.5" />
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-20">
+                  <div className="flex items-center gap-1 bg-gradient-to-r from-[var(--color-accent)] to-[var(--color-warning)] text-white px-3.5 py-1 rounded-full text-xs font-bold shadow-lg glow-pulse magnetic">
+                    <Sparkles className="h-3.5 w-3.5 animate-spin" style={{ animationDuration: '3s' }} />
                     {plan.badge}
                   </div>
                 </div>
               )}
 
               {/* Plan Header */}
-              <div className="text-center mb-6 mt-2">
-                <h3 className="text-xl font-bold text-[var(--color-text-dark)] mb-2">
+              <div className="text-center mb-6 mt-2 relative z-10">
+                <h3 className={`text-xl font-bold mb-2 ${plan.highlighted ? 'text-gradient' : 'text-[var(--color-text-dark)]'}`}>
                   {plan.title}
                 </h3>
-                <div className="text-3xl font-extrabold text-[var(--color-primary)]">
+                <div className={`text-3xl font-extrabold ${plan.highlighted ? 'text-gradient' : 'text-[var(--color-primary)]'}`}>
                   {plan.price}
                 </div>
               </div>
 
               {/* Features List */}
-              <ul className="space-y-3 mb-7">
+              <ul className="space-y-3 mb-7 relative z-10">
                 {plan.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-start gap-2.5">
+                  <li key={featureIndex} className="flex items-start gap-2.5 group/item">
                     <div className="flex-shrink-0 mt-0.5">
-                      <Check className="h-4.5 w-4.5 text-[var(--color-secondary)]" />
+                      <Check className="h-4.5 w-4.5 text-[var(--color-secondary)] group-hover/item:scale-125 transition-transform" />
                     </div>
-                    <span className="text-sm text-[var(--color-text)] leading-relaxed">{feature}</span>
+                    <span className="text-sm text-[var(--color-text)] leading-relaxed group-hover/item:text-[var(--color-text-dark)] transition-colors">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -97,11 +106,14 @@ export default function PricingSection() {
               {/* CTA Button */}
               <Button
                 variant={plan.highlighted ? 'primary' : 'outline'}
-                className="w-full"
+                className={`w-full relative z-10 ${plan.highlighted ? 'hover-glow' : 'magnetic'}`}
                 size="lg"
               >
                 {plan.cta}
               </Button>
+              
+              {/* Shimmer Effect */}
+              <div className="absolute inset-0 shimmer opacity-0 group-hover:opacity-100" />
             </Card>
           ))}
         </div>
