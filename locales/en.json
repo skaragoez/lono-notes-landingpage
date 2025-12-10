@@ -1,0 +1,156 @@
+{
+  "nav": {
+    "features": "Features",
+    "howItWorks": "How it works",
+    "pricing": "Pricing",
+    "download": "Download now"
+  },
+  "hero": {
+    "headline": "Organize Your Natural Medicine Knowledge in One Place",
+    "subheadline": "Stop the chaos in your recipes. LONO Notes helps you manage your herbal remedies, symptoms, and health goals with ease.",
+    "cta": "Start for Free",
+    "ctaSecondary": "Learn More",
+    "trustElement": "Join 10,000+ wellness enthusiasts"
+  },
+  "problem": {
+    "title": "Sound Familiar?",
+    "subtitle": "Your natural medicine recipes are scattered everywhere",
+    "pain1": "Which tea helped with my migraine?",
+    "pain2": "Where was that calendula ointment recipe?",
+    "pain3": "Which wrap did I use last time?",
+    "pain4": "My notes are spread across papers, books, and apps"
+  },
+  "features": {
+    "title": "Everything You Need",
+    "subtitle": "The perfect app for your natural health journey",
+    "organization": {
+      "title": "Smart Organization",
+      "description": "Categorize recipes by herbs & teas, oils & salves, baths & wraps, nutrition"
+    },
+    "tracking": {
+      "title": "Symptom Tracking",
+      "description": "Track sleep, energy, mood, pain, and digestion with beautiful charts"
+    },
+    "insights": {
+      "title": "Personalized Insights",
+      "description": "AI-powered content based on your interests and complaints"
+    },
+    "accessible": {
+      "title": "Always Accessible",
+      "description": "Your health data safely in the cloud, available on all devices"
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "Get organized in a few simple steps",
+    "step1": {
+      "title": "Add Recipes",
+      "description": "Add your natural medicine recipes, herbal mixtures, and applications"
+    },
+    "step2": {
+      "title": "Track Symptoms",
+      "description": "Record your daily symptoms and complaints in the health journal"
+    },
+    "step3": {
+      "title": "Discover Connections",
+      "description": "Find out which remedies work best for you"
+    },
+    "step4": {
+      "title": "Achieve Goals",
+      "description": "Set weekly health goals and track your progress"
+    }
+  },
+  "socialProof": {
+    "title": "What Our Users Say",
+    "testimonial1": {
+      "text": "Finally, I have all my herbal recipes in one place. The app is beautiful and so easy to use!",
+      "author": "Maria S.",
+      "role": "Naturopath"
+    },
+    "testimonial2": {
+      "text": "Symptom tracking helped me recognize patterns and find the right remedies for me.",
+      "author": "Thomas K.",
+      "role": "Natural Health Enthusiast"
+    },
+    "testimonial3": {
+      "text": "The best app for anyone interested in natural health. Privacy-first and Made in Germany!",
+      "author": "Ayşe D.",
+      "role": "Wellness Coach"
+    },
+    "stats": {
+      "users": "10,000+",
+      "usersLabel": "Active Users",
+      "recipes": "50,000+",
+      "recipesLabel": "Saved Recipes",
+      "rating": "4.8",
+      "ratingLabel": "App Store Rating"
+    },
+    "badges": {
+      "gdpr": "GDPR Compliant",
+      "privacy": "Privacy First",
+      "madeIn": "Made in Germany"
+    }
+  },
+  "pricing": {
+    "title": "Start Free, Discover More Later",
+    "subtitle": "LONO Notes is free to use. Pro features coming soon!",
+    "free": {
+      "title": "Free",
+      "price": "Free",
+      "features": [
+        "Unlimited recipes",
+        "Symptom tracking",
+        "Health journal",
+        "Personalized feed",
+        "Goal setting"
+      ],
+      "cta": "Get Started"
+    },
+    "pro": {
+      "title": "Pro (Coming Soon)",
+      "price": "Available Soon",
+      "features": [
+        "Everything in Free",
+        "AI Chatbot for Natural Medicine",
+        "RAG System for Your E-Books",
+        "Advanced Analytics",
+        "Priority Support"
+      ],
+      "cta": "Get Notified",
+      "badge": "Coming Soon"
+    }
+  },
+  "finalCta": {
+    "title": "Start Your Wellness Journey Today",
+    "subtitle": "Organize your natural medicine recipes and improve your health naturally",
+    "emailPlaceholder": "Your email address",
+    "emailCta": "Notify Me for Pro Launch",
+    "downloadCta": "Download App"
+  },
+  "footer": {
+    "tagline": "Your natural health, organized.",
+    "product": {
+      "title": "Product",
+      "features": "Features",
+      "pricing": "Pricing",
+      "download": "Download"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "imprint": "Imprint"
+    },
+    "support": {
+      "title": "Support",
+      "contact": "Contact",
+      "faq": "FAQ",
+      "help": "Help"
+    },
+    "social": {
+      "title": "Follow Us"
+    },
+    "copyright": "© 2024 LONO Notes. All rights reserved."
+  }
+}
+
