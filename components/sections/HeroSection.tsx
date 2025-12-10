@@ -55,7 +55,10 @@ export default function HeroSection() {
           {/* Right Column - Phone Mockup */}
           <div className="relative flex justify-center lg:justify-end">
             <div className="animate-float">
-              <PhoneMockup />
+              <PhoneMockup 
+                screenshot="/images/home-categories-stats.png"
+                alt="LONO Notes Home Screen"
+              />
             </div>
           </div>
         </div>

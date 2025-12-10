@@ -85,7 +85,10 @@ export default function FinalCTASection() {
           {/* Right Column - Phone Mockup */}
           <div className="flex justify-center">
             <div className="animate-float">
-              <PhoneMockup />
+              <PhoneMockup 
+                screenshot="/images/home-symptom-tracking.png"
+                alt="LONO Notes Symptom Tracking"
+              />
             </div>
           </div>
         </div>
