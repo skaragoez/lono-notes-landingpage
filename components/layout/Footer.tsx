@@ -51,7 +51,7 @@ export default function Footer() {
                 alt="LONO Notes Logo"
                 width={160}
                 height={40}
-                className="h-10 w-auto"
+                className="w-auto"
               />
             </div>
             <p className="text-[var(--color-text)] mb-4 max-w-sm">

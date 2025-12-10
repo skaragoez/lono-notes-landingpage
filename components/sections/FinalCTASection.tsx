@@ -62,7 +62,7 @@ export default function FinalCTASection() {
                 <Button
                   type="submit"
                   variant="secondary"
-                  size="md"
+                  size="medium"
                   className="whitespace-nowrap"
                 >
                   {t('emailCta')}
@@ -84,7 +84,6 @@ export default function FinalCTASection() {
                   width={200}
                   height={60}
                   className="h-[60px] w-auto"
-                  style={{ filter: 'brightness(0) invert(1)' }}
                 />
               </a>
             </div>

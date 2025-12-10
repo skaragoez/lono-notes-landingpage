@@ -75,7 +75,15 @@ export default function ProblemSection() {
                 <div className={`relative ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
                   <div className={`relative ${isLast ? 'flex items-center justify-center' : 'aspect-[4/3]'}`}>
                     {!isLast && (
-                      <div className="absolute inset-0 rounded-[3rem] overflow-hidden">
+                      <div 
+                        className="absolute inset-0 overflow-hidden"
+                        style={{
+                          borderTopLeftRadius: '1.2rem',
+                          borderTopRightRadius: '5rem',
+                          borderBottomLeftRadius: '5rem',
+                          borderBottomRightRadius: '1.2rem',
+                        }}
+                      >
                         <Image
                           src={problem.image}
                           alt={problem.title}
@@ -125,7 +133,7 @@ export default function ProblemSection() {
                     {/* CTA Buttons - nur bei Lösung */}
                     {isLast && (
                       <div className="space-y-4">
-                        <Button size="lg" className="w-full sm:w-auto gap-2">
+                        <Button size="large" className="w-full sm:w-auto gap-2">
                           <Download className="w-5 h-5" />
                           Jetzt kostenlos herunterladen
                         </Button>

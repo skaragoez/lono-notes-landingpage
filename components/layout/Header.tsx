@@ -47,7 +47,7 @@ export default function Header() {
             alt="LONO Notes Logo"
             width={160}
             height={40}
-            className="h-10 w-auto"
+            className="w-auto"
             priority
           />
         </Link>
@@ -68,7 +68,7 @@ export default function Header() {
         {/* Desktop CTA & Language Switcher */}
         <div className="hidden items-center justify-end gap-4 lg:flex">
           <LanguageSwitcher />
-          <Button size="md">{t('download')}</Button>
+          <Button size="medium">{t('download')}</Button>
         </div>
 
         {/* Mobile/Tablet Menu Button */}
@@ -102,7 +102,7 @@ export default function Header() {
                 {item.label}
               </a>
             ))}
-            <Button className="w-full" size="lg">
+            <Button className="w-full" size="large">
               {t('download')}
             </Button>
           </div>

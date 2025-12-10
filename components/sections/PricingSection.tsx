@@ -146,9 +146,9 @@ export default function PricingSection() {
 
               {/* CTA Button */}
               <Button
-                variant={plan.highlighted ? 'primary' : 'outline'}
+                variant={plan.highlighted ? 'primary' : 'secondary'}
                 className="w-full"
-                size="lg"
+                size="medium"
               >
                 {plan.cta}
               </Button>
