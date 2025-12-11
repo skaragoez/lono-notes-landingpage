@@ -18,7 +18,17 @@
     "pain1": "Hangi çay migrenim için yardımcı olmuştu?",
     "pain2": "O aynısefa merhemi tarifi neredeydi?",
     "pain3": "Geçen sefer hangi sargıyı kullanmıştım?",
-    "pain4": "Notlarım kağıtlara, kitaplara ve uygulamalara dağılmış"
+    "pain4": "Notlarım kağıtlara, kitaplara ve uygulamalara dağılmış",
+    "solution": {
+      "title": "Doğal Tıbbınızda Sonunda Düzen",
+      "description": "LONO Notes ile tüm ilaçlarınız, tarifleriniz ve ilerlemeniz tek bir yerde – ihtiyacınız olduğunda her zaman elinizin altında.",
+      "benefits": [
+        "Tüm tarifler tek bir yerde",
+        "Semptomları takip edin ve kalıpları tanıyın",
+        "İlerlemeyi görünür kılın",
+        "Sağlık hedeflerinize ulaşın"
+      ]
+    }
   },
   "features": {
     "title": "İhtiyacınız Olan Her Şey",

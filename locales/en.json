@@ -18,7 +18,17 @@
     "pain1": "Which tea helped with my migraine?",
     "pain2": "Where was that calendula ointment recipe?",
     "pain3": "Which wrap did I use last time?",
-    "pain4": "My notes are spread across papers, books, and apps"
+    "pain4": "My notes are spread across papers, books, and apps",
+    "solution": {
+      "title": "Finally, Order in Your Natural Medicine",
+      "description": "With LONO Notes, all your remedies, recipes, and progress are in one place – always at hand when you need them.",
+      "benefits": [
+        "All recipes in one place",
+        "Track symptoms and recognize patterns",
+        "Make progress visible",
+        "Achieve your health goals"
+      ]
+    }
   },
   "features": {
     "title": "Everything You Need",

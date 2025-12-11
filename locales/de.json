@@ -18,7 +18,17 @@
     "pain1": "Welcher Tee hat bei meiner Migräne geholfen?",
     "pain2": "Wo war nochmal das Rezept für die Ringelblumensalbe?",
     "pain3": "Welche Wickel habe ich beim letzten Mal verwendet?",
-    "pain4": "Meine Notizen sind auf Zetteln, in Büchern und Apps verteilt"
+    "pain4": "Meine Notizen sind auf Zetteln, in Büchern und Apps verteilt",
+    "solution": {
+      "title": "Endlich Ordnung in deiner Naturheilkunde",
+      "description": "Mit LONO Notes hast du alle deine Heilmittel, Rezepte und Fortschritte an einem Ort – immer griffbereit, wenn du sie brauchst.",
+      "benefits": [
+        "Alle Rezepte an einem Ort",
+        "Symptome tracken und Muster erkennen",
+        "Fortschritte sichtbar machen",
+        "Gesundheitsziele erreichen"
+      ]
+    }
   },
   "features": {
     "title": "Alles was du brauchst",

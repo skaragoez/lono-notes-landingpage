@@ -70,26 +70,28 @@ export default function PricingSection() {
           </p>
 
           {/* Billing Toggle */}
-          <div className="flex items-center justify-center gap-4 mt-8">
-            <span className={`text-sm font-medium transition-colors ${!isYearly ? 'text-[var(--color-text-dark)]' : 'text-[var(--color-text)]'}`}>
-              {t('billingToggle.monthly')}
-            </span>
-            <button
-              onClick={() => setIsYearly(!isYearly)}
-              className="relative inline-flex h-8 w-16 items-center rounded-full bg-gray-300 transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:ring-offset-2"
-              style={{ backgroundColor: isYearly ? 'var(--color-primary)' : '' }}
-            >
-              <span
-                className={`inline-block h-6 w-6 transform rounded-full bg-white shadow-lg transition-transform ${
-                  isYearly ? 'translate-x-9' : 'translate-x-1'
-                }`}
-              />
-            </button>
-            <span className={`text-sm font-medium transition-colors ${isYearly ? 'text-[var(--color-text-dark)]' : 'text-[var(--color-text)]'}`}>
-              {t('billingToggle.yearly')}
-            </span>
+          <div className="flex flex-col items-center justify-center gap-3 mt-8">
+            <div className="flex items-center justify-center gap-4">
+              <span className={`text-sm font-medium transition-colors ${!isYearly ? 'text-[var(--color-text-dark)]' : 'text-[var(--color-text)]'}`}>
+                {t('billingToggle.monthly')}
+              </span>
+              <button
+                onClick={() => setIsYearly(!isYearly)}
+                className="relative inline-flex h-8 w-16 items-center rounded-full bg-gray-300 transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:ring-offset-2"
+                style={{ backgroundColor: isYearly ? 'var(--color-primary)' : '' }}
+              >
+                <span
+                  className={`inline-block h-6 w-6 transform rounded-full bg-white shadow-lg transition-transform ${
+                    isYearly ? 'translate-x-9' : 'translate-x-1'
+                  }`}
+                />
+              </button>
+              <span className={`text-sm font-medium transition-colors ${isYearly ? 'text-[var(--color-text-dark)]' : 'text-[var(--color-text)]'}`}>
+                {t('billingToggle.yearly')}
+              </span>
+            </div>
             {isYearly && (
-              <span className="ml-2 rounded-full bg-green-100 px-3 py-1 text-xs font-semibold text-green-700">
+              <span className="rounded-full bg-green-100 px-3 py-1 text-xs font-semibold text-green-700">
                 {t('billingToggle.save')}
               </span>
             )}

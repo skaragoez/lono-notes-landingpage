@@ -36,13 +36,13 @@ export default function ProblemSection() {
     },
     {
       image: '/images/mockup.png',
-      title: 'Die Lösung: LONO Notes',
-      description: 'Schluss mit dem Chaos! Mit LONO Notes hast du endlich alles unter Kontrolle.',
+      title: t('solution.title'),
+      description: t('solution.description'),
       benefits: [
-        'Alle Rezepte an einem Ort',
-        'Symptome tracken und Muster erkennen',
-        'Fortschritte sichtbar machen',
-        'Gesundheitsziele erreichen',
+        t('solution.benefits.0'),
+        t('solution.benefits.1'),
+        t('solution.benefits.2'),
+        t('solution.benefits.3'),
       ],
     },
   ];
