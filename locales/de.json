@@ -113,9 +113,9 @@
     },
     "earlyAccess": "Jetzt als Erste/r dabei sein",
     "badges": {
+      "free": "Kostenlos",
       "gdpr": "GDPR-konform",
-      "privacy": "Privacy First",
-      "madeIn": "Made in Germany"
+      "ai": "KI-gestützt"
     }
   },
   "pricing": {

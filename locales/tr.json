@@ -113,9 +113,9 @@
     },
     "earlyAccess": "İlk katılanlardan biri ol",
     "badges": {
+      "free": "Ücretsiz",
       "gdpr": "GDPR Uyumlu",
-      "privacy": "Gizlilik Öncelikli",
-      "madeIn": "Almanya'da Üretildi"
+      "ai": "Yapay Zeka Destekli"
     }
   },
   "pricing": {
