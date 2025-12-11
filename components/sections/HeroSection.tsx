@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import { Gift, ShieldCheck, Bot } from 'lucide-react';
 
 export default function HeroSection() {
@@ -18,12 +19,21 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-white via-[var(--color-subtle)] to-white pt-32 pb-20">
-      {/* Decorative Elements */}
-      <div className="absolute top-20 right-10 h-64 w-64 rounded-full bg-[var(--color-primary)] opacity-10 blur-3xl animate-float" />
-      <div className="absolute bottom-20 left-10 h-96 w-96 rounded-full bg-[var(--color-secondary)] opacity-10 blur-3xl" style={{ animationDelay: '1s' }} />
+    <section className="relative overflow-hidden pt-32 pb-20">
+      {/* Background Image */}
+      <div className="absolute bottom-0 right-0 w-full h-full pointer-events-none">
+        <div className="relative w-full h-full">
+          <Image
+            src="/images/hero-bg-02.png"
+            alt=""
+            fill
+            className="object-contain object-right-bottom opacity-20"
+            priority
+          />
+        </div>
+      </div>
 
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           {/* Left Column - Content */}
           <div className="text-center lg:text-left">
@@ -70,7 +80,12 @@ export default function HeroSection() {
           </div>
 
           {/* Right Column - Phone Mockup */}
-          <div className="relative flex justify-center lg:justify-end">
+          <motion.div
+            className="relative flex justify-center lg:justify-end"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
+          >
             <Image
               src="/images/mockup.png"
               alt="LONO Notes Home Screen with Progress Dashboard"
@@ -79,7 +94,7 @@ export default function HeroSection() {
               className="w-full max-w-[300px] md:max-w-[350px] h-auto drop-shadow-2xl"
               priority
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
