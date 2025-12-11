@@ -10,7 +10,11 @@
     "subheadline": "Never forget what helped you. With LONO Notes, all your recipes, symptoms, and progress are in one place – always at hand.",
     "cta": "Start for Free",
     "ctaSecondary": "Learn More",
-    "trustElement": "Join 10,000+ wellness enthusiasts"
+    "trustElement": {
+      "free": "Free",
+      "gdpr": "GDPR Compliant",
+      "madeIn": "AI-Powered"
+    }
   },
   "problem": {
     "title": "Does This Sound Familiar?",
@@ -91,30 +95,23 @@
     }
   },
   "socialProof": {
-    "title": "What Our Users Say",
-    "testimonial1": {
-      "text": "Finally, I have all my herbal recipes in one place. The app is beautiful and so easy to use!",
-      "author": "Maria S.",
-      "role": "Naturopath"
+    "title": "Simple. Organized. Reliable.",
+    "subtitle": "A modern app that finally organizes your natural medicine notes",
+    "trustPoints": {
+      "design": {
+        "title": "Beautiful & Intuitive",
+        "description": "Every detail is thoughtfully designed. An app that not only works, but also brings joy."
+      },
+      "simple": {
+        "title": "Simple & Focused",
+        "description": "No over-complexity. Only the features you really need to organize your recipes and notes."
+      },
+      "evolution": {
+        "title": "Continuously Evolving",
+        "description": "We listen and continuously improve LONO Notes. Your feedback helps us make the app even better."
+      }
     },
-    "testimonial2": {
-      "text": "Symptom tracking helped me recognize patterns and find the right remedies for me.",
-      "author": "Thomas K.",
-      "role": "Natural Health Enthusiast"
-    },
-    "testimonial3": {
-      "text": "The best app for anyone interested in natural health. Privacy-first and Made in Germany!",
-      "author": "Ayşe D.",
-      "role": "Wellness Coach"
-    },
-    "stats": {
-      "users": "10,000+",
-      "usersLabel": "Active Users",
-      "recipes": "50,000+",
-      "recipesLabel": "Saved Recipes",
-      "rating": "4.8",
-      "ratingLabel": "App Store Rating"
-    },
+    "earlyAccess": "Be among the first to join",
     "badges": {
       "gdpr": "GDPR Compliant",
       "privacy": "Privacy First",

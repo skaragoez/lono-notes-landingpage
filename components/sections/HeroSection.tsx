@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
+import { Gift, ShieldCheck, Bot } from 'lucide-react';
 
 export default function HeroSection() {
   const t = useTranslations('hero');
@@ -52,18 +53,19 @@ export default function HeroSection() {
             </div>
 
             {/* Trust Element */}
-            <div className="mt-8 flex items-center justify-center gap-2 lg:justify-start">
-              <div className="flex -space-x-2">
-                {[1, 2, 3, 4].map((i) => (
-                  <div
-                    key={i}
-                    className="h-10 w-10 rounded-full border-2 border-white bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)]"
-                  />
-                ))}
+            <div className="mt-8 flex items-center justify-center gap-4 flex-wrap lg:justify-start">
+              <div className="flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-gray-200 shadow-sm">
+                <Gift className="h-5 w-5 text-[var(--color-primary)]" />
+                <span className="text-base font-semibold text-[var(--color-text-dark)]">{t('trustElement.free')}</span>
               </div>
-              <p className="text-sm text-[var(--color-text)]">
-                {t('trustElement')}
-              </p>
+              <div className="flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-gray-200 shadow-sm">
+                <ShieldCheck className="h-5 w-5 text-[var(--color-primary)]" />
+                <span className="text-base font-semibold text-[var(--color-text-dark)]">{t('trustElement.gdpr')}</span>
+              </div>
+              <div className="flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-gray-200 shadow-sm">
+                <Bot className="h-5 w-5 text-[var(--color-primary)]" />
+                <span className="text-base font-semibold text-[var(--color-text-dark)]">{t('trustElement.madeIn')}</span>
+              </div>
             </div>
           </div>
 

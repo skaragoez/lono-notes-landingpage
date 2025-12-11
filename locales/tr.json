@@ -10,7 +10,11 @@
     "subheadline": "Size neyin yardımcı olduğunu bir daha asla unutmayın. LONO Notes ile tüm tarifler, semptomlar ve ilerlemeler tek yerde – her zaman elinizin altında.",
     "cta": "Ücretsiz Başla",
     "ctaSecondary": "Daha Fazla Bilgi",
-    "trustElement": "10.000+ wellness tutkunu bize güveniyor"
+    "trustElement": {
+      "free": "Ücretsiz",
+      "gdpr": "GDPR Uyumlu",
+      "madeIn": "Yapay Zeka Destekli"
+    }
   },
   "problem": {
     "title": "Tanıdık Geliyor mu?",
@@ -91,30 +95,23 @@
     }
   },
   "socialProof": {
-    "title": "Kullanıcılarımız Ne Diyor",
-    "testimonial1": {
-      "text": "Sonunda tüm bitkisel tariflerim tek yerde. Uygulama çok güzel ve kullanımı çok kolay!",
-      "author": "Maria S.",
-      "role": "Naturopat"
+    "title": "Basit. Düzenli. Güvenilir.",
+    "subtitle": "Doğal tıp notlarınızı sonunda düzenleyen modern bir uygulama",
+    "trustPoints": {
+      "design": {
+        "title": "Güzel & Sezgisel",
+        "description": "Her detay düşünülerek tasarlandı. Sadece çalışan değil, aynı zamanda keyif veren bir uygulama."
+      },
+      "simple": {
+        "title": "Basit & Odaklı",
+        "description": "Aşırı karmaşıklık yok. Tariflerinizi ve notlarınızı düzenlemek için gerçekten ihtiyacınız olan özellikler."
+      },
+      "evolution": {
+        "title": "Sürekli Gelişiyor",
+        "description": "Dinliyoruz ve LONO Notes'u sürekli iyileştiriyoruz. Geri bildirimleriniz uygulamayı daha da iyi yapmamıza yardımcı oluyor."
+      }
     },
-    "testimonial2": {
-      "text": "Semptom takibi, kalıpları fark etmeme ve benim için doğru ilaçları bulmama yardımcı oldu.",
-      "author": "Thomas K.",
-      "role": "Doğal Sağlık Tutkunu"
-    },
-    "testimonial3": {
-      "text": "Doğal sağlıkla ilgilenen herkes için en iyi uygulama. Gizlilik öncelikli ve Almanya'da üretildi!",
-      "author": "Ayşe D.",
-      "role": "Wellness Koçu"
-    },
-    "stats": {
-      "users": "10.000+",
-      "usersLabel": "Aktif Kullanıcı",
-      "recipes": "50.000+",
-      "recipesLabel": "Kaydedilmiş Tarif",
-      "rating": "4.8",
-      "ratingLabel": "App Store Değerlendirmesi"
-    },
+    "earlyAccess": "İlk katılanlardan biri ol",
     "badges": {
       "gdpr": "GDPR Uyumlu",
       "privacy": "Gizlilik Öncelikli",

@@ -10,7 +10,11 @@
     "subheadline": "Nie wieder vergessen, was dir geholfen hat. Mit LONO Notes hast du alle Rezepte, Symptome und Fortschritte an einem Ort – immer griffbereit.",
     "cta": "Kostenlos starten",
     "ctaSecondary": "Mehr erfahren",
-    "trustElement": "Über 10.000+ Wellness-Enthusiasten vertrauen uns"
+    "trustElement": {
+      "free": "Kostenlos",
+      "gdpr": "GDPR-konform",
+      "madeIn": "KI-gestützt"
+    }
   },
   "problem": {
     "title": "Kommt dir das bekannt vor?",
@@ -91,30 +95,23 @@
     }
   },
   "socialProof": {
-    "title": "Das sagen unsere Nutzer",
-    "testimonial1": {
-      "text": "Endlich habe ich alle meine Kräuterrezepte an einem Ort. Die App ist wunderschön und so einfach zu bedienen!",
-      "author": "Maria S.",
-      "role": "Heilpraktikerin"
+    "title": "Einfach. Organisiert. Zuverlässig.",
+    "subtitle": "Eine moderne App, die deine Naturheilkunde-Notizen endlich organisiert",
+    "trustPoints": {
+      "design": {
+        "title": "Schön & intuitiv",
+        "description": "Jedes Detail ist durchdacht. Eine App, die nicht nur funktioniert, sondern auch Freude macht."
+      },
+      "simple": {
+        "title": "Einfach & fokussiert",
+        "description": "Keine Überkomplexität. Nur die Features, die du wirklich brauchst, um deine Rezepte und Notizen zu organisieren."
+      },
+      "evolution": {
+        "title": "Stetig weiterentwickelt",
+        "description": "Wir hören zu und verbessern LONO Notes kontinuierlich. Dein Feedback hilft uns, die App noch besser zu machen."
+      }
     },
-    "testimonial2": {
-      "text": "Das Symptom-Tracking hat mir geholfen, Muster zu erkennen und die richtigen Mittel für mich zu finden.",
-      "author": "Thomas K.",
-      "role": "Naturheilkunde-Enthusiast"
-    },
-    "testimonial3": {
-      "text": "Die beste App für alle, die sich für natürliche Gesundheit interessieren. Privacy-First und Made in Germany!",
-      "author": "Ayşe D.",
-      "role": "Wellness-Coach"
-    },
-    "stats": {
-      "users": "10.000+",
-      "usersLabel": "Aktive Nutzer",
-      "recipes": "50.000+",
-      "recipesLabel": "Gespeicherte Rezepte",
-      "rating": "4.8",
-      "ratingLabel": "App Store Bewertung"
-    },
+    "earlyAccess": "Jetzt als Erste/r dabei sein",
     "badges": {
       "gdpr": "GDPR-konform",
       "privacy": "Privacy First",

@@ -2,33 +2,27 @@
 
 import { useTranslations } from 'next-intl';
 import Card from '@/components/ui/Card';
-import { Quote, Shield, Lock, MapPin } from 'lucide-react';
+import { Shield, Lock, MapPin, Sparkles, Zap, Palette, Rocket } from 'lucide-react';
 
 export default function SocialProofSection() {
   const t = useTranslations('socialProof');
 
-  const testimonials = [
+  const trustPoints = [
     {
-      text: t('testimonial1.text'),
-      author: t('testimonial1.author'),
-      role: t('testimonial1.role'),
+      icon: Palette,
+      title: t('trustPoints.design.title'),
+      description: t('trustPoints.design.description'),
     },
     {
-      text: t('testimonial2.text'),
-      author: t('testimonial2.author'),
-      role: t('testimonial2.role'),
+      icon: Zap,
+      title: t('trustPoints.simple.title'),
+      description: t('trustPoints.simple.description'),
     },
     {
-      text: t('testimonial3.text'),
-      author: t('testimonial3.author'),
-      role: t('testimonial3.role'),
+      icon: Rocket,
+      title: t('trustPoints.evolution.title'),
+      description: t('trustPoints.evolution.description'),
     },
-  ];
-
-  const stats = [
-    { value: t('stats.users'), label: t('stats.usersLabel') },
-    { value: t('stats.recipes'), label: t('stats.recipesLabel') },
-    { value: t('stats.rating'), label: t('stats.ratingLabel') },
   ];
 
   const badges = [
@@ -43,40 +37,36 @@ export default function SocialProofSection() {
         {/* Title */}
         <div className="text-center mb-16">
           <h2 className="mb-4">{t('title')}</h2>
+          <p className="text-lg text-[var(--color-text)] max-w-2xl mx-auto">
+            {t('subtitle')}
+          </p>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 max-w-4xl mx-auto">
-          {stats.map((stat, index) => (
-            <div key={index} className="text-center">
-              <div className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-secondary)] mb-2">
-                {stat.value}
-              </div>
-              <div className="text-sm font-medium text-[var(--color-text)] uppercase tracking-wide">
-                {stat.label}
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Testimonials */}
+        {/* Trust Points */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 max-w-6xl mx-auto">
-          {testimonials.map((testimonial, index) => (
-            <Card key={index} hover>
-              <Quote className="h-10 w-10 text-[var(--color-primary)] opacity-30 mb-4" />
-              <p className="text-[var(--color-text)] mb-6 italic leading-relaxed">
-                "{testimonial.text}"
-              </p>
-              <div className="border-t border-gray-100 pt-4">
-                <p className="font-bold text-[var(--color-text-dark)]">
-                  {testimonial.author}
-                </p>
-                <p className="text-sm text-[var(--color-text)]">
-                  {testimonial.role}
-                </p>
+          {trustPoints.map((point, index) => (
+            <Card key={index} hover className="text-center">
+              <div className="flex justify-center mb-4">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] flex items-center justify-center">
+                  <point.icon className="h-8 w-8 text-white" />
+                </div>
               </div>
+              <h3 className="text-xl font-bold text-[var(--color-text-dark)] mb-3">
+                {point.title}
+              </h3>
+              <p className="text-[var(--color-text)] leading-relaxed">
+                {point.description}
+              </p>
             </Card>
           ))}
+        </div>
+
+        {/* Early Access Badge */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-secondary)] text-white px-6 py-3 rounded-full shadow-lg">
+            <Sparkles className="h-5 w-5" />
+            <span className="font-semibold">{t('earlyAccess')}</span>
+          </div>
         </div>
 
         {/* Trust Badges */}
