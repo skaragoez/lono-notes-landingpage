@@ -115,7 +115,7 @@ export default function ProblemSection() {
                     </p>
 
                     {/* Benefits List - nur bei Lösung */}
-                    {isLast && 'benefits' in problem && (
+                    {isLast && 'benefits' in problem && problem.benefits && (
                       <ul className="space-y-3 mb-8">
                         {problem.benefits.map((benefit: string, i: number) => (
                           <li key={i} className="flex items-start gap-3">
