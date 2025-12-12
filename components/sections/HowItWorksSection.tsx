@@ -72,7 +72,7 @@ export default function HowItWorksSection() {
               <AnimatedSection key={index} delay={index * 0.1}>
                 <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center`}>
                   {/* Image */}
-                  <div className={`relative ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
+                  <div className={`relative order-2 ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
                     <div className="relative aspect-[9/16] max-w-sm mx-auto">
                       <Image
                         src={step.image}
@@ -84,7 +84,7 @@ export default function HowItWorksSection() {
                   </div>
 
                   {/* Content */}
-                  <div className={`${isEven ? 'lg:order-2' : 'lg:order-1'} text-center lg:text-left`}>
+                  <div className={`order-1 ${isEven ? 'lg:order-2' : 'lg:order-1'} text-center lg:text-left`}>
                     <div className="mb-4 text-6xl font-extrabold text-[var(--color-primary)]">
                       {step.number}
                     </div>
