@@ -41,8 +41,11 @@ export default function FinalCTASection() {
           {/* Left Column - Content */}
           <div className="text-center lg:text-left">
             <h2 className="mb-6 text-white">{t('title')}</h2>
-            <p className="text-lg text-white/90 mb-8 max-w-xl mx-auto lg:mx-0">
+            <p className="text-lg text-white/90 mb-4 max-w-xl mx-auto lg:mx-0">
               {t('subtitle')}
+            </p>
+            <p className="text-sm text-white/80 mb-8 max-w-xl mx-auto lg:mx-0">
+              {t('upgradeNote')}
             </p>
 
             {/* Email Capture Form */}

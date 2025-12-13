@@ -20,9 +20,12 @@
     "title": "Tanıdık Geliyor mu?",
     "subtitle": "Sistem olmadan sağlığınız hakkında değerli bilgiler kaybediyorsunuz",
     "pain1": "Hangi çay migrenim için yardımcı olmuştu?",
-    "pain2": "O aynısefa merhemi tarifi neredeydi?",
+    "pain1Description": "En önemli ilaçlarınız farklı notlara dağılmış. Gerçekten ihtiyacınız olduğunda onları bulamıyorsunuz.",
+    "pain2": "Hangi ilaç semptomlarım için yardımcı olmuştu?",
+    "pain2Description": "Geçen sefer hangi ilacın gerçekten yardımcı olduğunu hatırlayamıyorsunuz. Zencefil miydi yoksa papatya mı? Hangi dozaj?",
     "pain3": "Geçen sefer hangi sargıyı kullanmıştım?",
     "pain4": "Notlarım kağıtlara, kitaplara ve uygulamalara dağılmış",
+    "pain4Description": "Düzensiz notlar her şeyi takip etmeyi imkansız hale getiriyor.",
     "solution": {
       "title": "Doğal Tıbbınızda Sonunda Düzen",
       "description": "LONO Notes ile tüm ilaçlarınız, tarifleriniz ve ilerlemeniz tek bir yerde – ihtiyacınız olduğunda her zaman elinizin altında.",
@@ -119,23 +122,32 @@
     }
   },
   "pricing": {
-    "title": "Ücretsiz Başlayın – Hazır Olduğunuzda Yükseltin",
-    "subtitle": "Bugün ücretsiz sürümle başlayın. Gelişmiş özellikler yakında!",
+    "title": "Ücretsiz başlayın. Daha fazla netlik istediğinizde yükseltin.",
+    "subtitle": "Temel başlamak için ücretsizdir. Uzun vadeli kullanım, takip ve analizler için isteğe bağlı uygulama içi yükseltmeler mevcuttur. Fiyatlar uygulamada gösterilir (bölgeye göre hafifçe değişebilir).",
     "billingToggle": {
       "monthly": "Aylık",
       "yearly": "Yıllık",
-      "save": "%20 Tasarruf"
+      "save": "Yıllık planda tasarruf edin"
     },
+    "priceTransparency": "Sınırlı bir sürümle ücretsiz başlıyorsunuz. Tüm yükseltmeler uygulama içi satın alma olarak gerçekleşir ve istediğiniz zaman iptal edilebilir.",
     "free": {
+      "label": "BAŞLAMAK İÇİN",
       "title": "Ücretsiz",
-      "price": "0₺ – Sonsuza Dek",
+      "price": "0₺ – Denemek için",
+      "shortDescription": "Tarifler ve notlar toplayın – her şey tek yerde. Başlamak ve denemek için ideal.",
       "features": [
-        "Önceden tanımlanmış etiketler ve kategorilerle sınırsız notlar",
-        "Sınırsız günlük girişleri"
+        "50'ye kadar not",
+        "14 günlük girişi (≈ 2 hafta)",
+        "3 özel kategori",
+        "5 özel etiket",
+        "Önceden tanımlanmış etiketler ve kategoriler dahil"
       ],
-      "cta": "Ücretsiz Başla"
+      "cta": "Ücretsiz başla",
+      "microcopy": "İstediğiniz zaman yükseltme mümkün"
     },
     "basis": {
+      "label": "TAVSİYE EDİLEN",
+      "subLabel": "SİSTEMATİK TAKİP İÇİN",
       "title": "Temel",
       "priceMonthly": "7,99€",
       "priceYearly": "76,99€",
@@ -143,19 +155,21 @@
         "monthly": "/ ay",
         "yearly": "/ yıl"
       },
+      "shortDescription": "Kalıpları tanıyın: Ne yardımcı oldu – ne olmadı?",
+      "additionalText": "Düzenli kullanım için ideal",
       "features": [
-        "Ücretsiz'deki her şey",
-        "Kişiselleştirilmiş Etiketler",
-        "Kişiselleştirilmiş Kategoriler",
-        "Semptom Takibi",
-        "Haftalık İnceleme",
-        "Hedefler",
-        "İlerleme Panosu"
+        "Sınırsız notlar ve günlükler",
+        "Semptomları takip edin ve trendleri tanıyın",
+        "Haftalık İnceleme + kişisel hedefler",
+        "Kendi yapınız (etiketler ve kategoriler)"
       ],
-      "cta": "Şimdi Yükselt",
-      "badge": "Tavsiye Edilen"
+      "cta": "Şimdi yükselt",
+      "badge": "Tavsiye Edilen",
+      "microcopy": "Uygulama içi satın alma • istediğiniz zaman iptal edin"
     },
     "pro": {
+      "label": "YAKINDA",
+      "subLabel": "YAPAY ZEKA + BİLGİ TABANI",
       "title": "Pro",
       "priceMonthly": "14,99€",
       "priceYearly": "143,99€",
@@ -163,19 +177,22 @@
         "monthly": "/ ay",
         "yearly": "/ yıl"
       },
+      "shortDescription": "Notlarınız ve belgelerinize dayalı kişisel tavsiye.",
+      "additionalText": "Bağlantıları gerçekten anlamak isteyen herkes için.",
       "features": [
-        "Temel'deki her şey",
-        "Yapay Zeka Doğal Tıp Danışmanı",
-        "Kişiselleştirilmiş Bilgi Tabanı için RAG Sistemi",
-        "Daha iyi takip ve iyileşme anlayışı için günlük girişlerinin analizi"
+        "Yapay zeka sohbeti + sohbetleri not olarak kaydedin",
+        "PDF'ler / e-kitaplar kullanın (RAG Bilgi Tabanı)",
+        "Girişlerinizin daha derin analizi"
       ],
-      "cta": "Bildirim Al",
-      "badge": "Yakında"
+      "cta": "Erken erişim güvenceye alın",
+      "badge": "Yakında",
+      "microcopy": "Uygulama içi satın alma • istediğiniz zaman iptal edin"
     }
   },
   "finalCta": {
     "title": "Sağlığınızda Daha Fazla Netlik İçin Hazır mısınız?",
     "subtitle": "Bugün ücretsiz başlayın – kredi kartı gerekmez. Doğal tıp notlarınızı sonunda profesyonelce düzenleyin.",
+    "upgradeNote": "Yükseltmeleri uygulamada istediğiniz zaman etkinleştirebilir veya iptal edebilirsiniz.",
     "emailPlaceholder": "E-posta adresiniz",
     "emailCta": "Erken Erişim Al",
     "downloadCta": "Ücretsiz İndir"

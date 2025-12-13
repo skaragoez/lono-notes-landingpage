@@ -20,9 +20,12 @@
     "title": "Does This Sound Familiar?",
     "subtitle": "Without a system, you're losing valuable knowledge about your health",
     "pain1": "Which tea helped with my migraine?",
-    "pain2": "Where was that calendula ointment recipe?",
+    "pain1Description": "Your most important remedies are scattered across different notes. When you really need them, you can't find them.",
+    "pain2": "Which remedy helped with my symptoms?",
+    "pain2Description": "You can't remember which remedy really helped you last time. Was it ginger or chamomile? What dosage?",
     "pain3": "Which wrap did I use last time?",
     "pain4": "My notes are spread across papers, books, and apps",
+    "pain4Description": "Unorganized notes make it impossible to keep track of everything.",
     "solution": {
       "title": "Finally, Order in Your Natural Medicine",
       "description": "With LONO Notes, all your remedies, recipes, and progress are in one place – always at hand when you need them.",
@@ -119,23 +122,32 @@
     }
   },
   "pricing": {
-    "title": "Start Free – Upgrade When You're Ready",
-    "subtitle": "Begin today with the free version. Advanced features coming soon!",
+    "title": "Start free. Upgrade when you want more clarity.",
+    "subtitle": "The base is free to get started. For long-term use, tracking, and analysis, optional in-app upgrades are available. Prices are displayed in the app (may vary slightly by region).",
     "billingToggle": {
       "monthly": "Monthly",
       "yearly": "Yearly",
-      "save": "Save 20%"
+      "save": "Save with annual plan"
     },
+    "priceTransparency": "You start free with a limited version. All upgrades are in-app purchases and can be canceled anytime.",
     "free": {
+      "label": "TO GET STARTED",
       "title": "Free",
-      "price": "$0 – Forever",
+      "price": "$0 – To try out",
+      "shortDescription": "Collect recipes & notes – everything in one place. Ideal for getting started and trying it out.",
       "features": [
-        "Unlimited notes with predefined tags and categories",
-        "Unlimited journal entries"
+        "Up to 50 notes",
+        "14 journal entries (≈ 2 weeks)",
+        "3 custom categories",
+        "5 custom tags",
+        "Predefined tags & categories included"
       ],
-      "cta": "Start Free"
+      "cta": "Start free",
+      "microcopy": "Upgrade anytime possible"
     },
     "basis": {
+      "label": "RECOMMENDED",
+      "subLabel": "FOR SYSTEMATIC TRACKING",
       "title": "Basic",
       "priceMonthly": "$7.99",
       "priceYearly": "$76.99",
@@ -143,19 +155,21 @@
         "monthly": "/ month",
         "yearly": "/ year"
       },
+      "shortDescription": "Recognize patterns: What helped – what didn't?",
+      "additionalText": "Ideal for regular use",
       "features": [
-        "Everything in Free",
-        "Personalized Tags",
-        "Personalized Categories",
-        "Symptom Tracking",
-        "Weekly Review",
-        "Goals",
-        "Progress Dashboard"
+        "Unlimited notes & journals",
+        "Track symptoms & recognize trends",
+        "Weekly Review + personal goals",
+        "Your own structure (tags & categories)"
       ],
-      "cta": "Upgrade Now",
-      "badge": "Recommended"
+      "cta": "Upgrade now",
+      "badge": "Recommended",
+      "microcopy": "In-app purchase • cancel anytime"
     },
     "pro": {
+      "label": "COMING SOON",
+      "subLabel": "AI + KNOWLEDGE BASE",
       "title": "Pro",
       "priceMonthly": "$14.99",
       "priceYearly": "$143.99",
@@ -163,19 +177,22 @@
         "monthly": "/ month",
         "yearly": "/ year"
       },
+      "shortDescription": "Personal advice based on your notes & documents.",
+      "additionalText": "For everyone who wants to truly understand connections.",
       "features": [
-        "Everything in Basic",
-        "AI Natural Medicine Advisor",
-        "RAG System for Personalized Knowledge Base",
-        "Analysis of Journal Entries for Better Tracking and Healing Understanding"
+        "AI chat + save chats as notes",
+        "Use PDFs / e-books (RAG Knowledge Base)",
+        "Deeper analysis of your entries"
       ],
-      "cta": "Get Notified",
-      "badge": "Coming Soon"
+      "cta": "Secure early access",
+      "badge": "Coming Soon",
+      "microcopy": "In-app purchase • cancel anytime"
     }
   },
   "finalCta": {
     "title": "Ready for More Clarity in Your Health?",
     "subtitle": "Start free today – no credit card required. Finally organize your natural medicine notes professionally.",
+    "upgradeNote": "You can activate or cancel upgrades anytime in the app.",
     "emailPlaceholder": "Your email address",
     "emailCta": "Get Early Access",
     "downloadCta": "Download Free"

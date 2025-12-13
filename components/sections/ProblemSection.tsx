@@ -22,17 +22,17 @@ export default function ProblemSection() {
     {
       image: '/images/frau-mit-migreane-sucht-nach-rezept.png',
       title: t('pain1'),
-      description: 'Deine wichtigsten Heilmittel sind über verschiedene Notizen verstreut. Wenn du sie wirklich brauchst, findest du sie nicht.',
+      description: t('pain1Description'),
     },
     {
       image: '/images/frau-schaut-nach-etwas-im-regal.png',
-      title: 'Welches Mittel hat bei meinen Symptomen geholfen?',
-      description: 'Du kannst dich nicht mehr erinnern, welches Heilmittel dir beim letzten Mal wirklich geholfen hat. War es Ingwer oder Kamille? Welche Dosierung?',
+      title: t('pain2'),
+      description: t('pain2Description'),
     },
     {
       image: '/images/frau-ist-verloren-im-notizen-jungel.png',
       title: t('pain4'),
-      description: 'Unübersichtliche Notizen machen es unmöglich, den Überblick zu behalten.',
+      description: t('pain4Description'),
     },
     {
       image: '/images/mockup.png',

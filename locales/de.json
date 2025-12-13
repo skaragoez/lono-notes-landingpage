@@ -20,9 +20,12 @@
     "title": "Kommt dir das bekannt vor?",
     "subtitle": "Ohne System verlierst du wertvolles Wissen über deine Gesundheit",
     "pain1": "Welcher Tee hat bei meiner Migräne geholfen?",
-    "pain2": "Wo war nochmal das Rezept für die Ringelblumensalbe?",
+    "pain1Description": "Deine wichtigsten Heilmittel sind über verschiedene Notizen verstreut. Wenn du sie wirklich brauchst, findest du sie nicht.",
+    "pain2": "Welches Mittel hat bei meinen Symptomen geholfen?",
+    "pain2Description": "Du kannst dich nicht mehr erinnern, welches Heilmittel dir beim letzten Mal wirklich geholfen hat. War es Ingwer oder Kamille? Welche Dosierung?",
     "pain3": "Welche Wickel habe ich beim letzten Mal verwendet?",
     "pain4": "Meine Notizen sind auf Zetteln, in Büchern und Apps verteilt",
+    "pain4Description": "Unübersichtliche Notizen machen es unmöglich, den Überblick zu behalten.",
     "solution": {
       "title": "Endlich Ordnung in deiner Naturheilkunde",
       "description": "Mit LONO Notes hast du alle deine Heilmittel, Rezepte und Fortschritte an einem Ort – immer griffbereit, wenn du sie brauchst.",
@@ -119,23 +122,32 @@
     }
   },
   "pricing": {
-    "title": "Starte kostenlos – upgraden kannst du später",
-    "subtitle": "Beginne heute mit der kostenlosen Version. Erweiterte Features kommen bald!",
+    "title": "Kostenlos starten. Upgraden, wenn du mehr Klarheit willst.",
+    "subtitle": "Die Basis ist zum Einstieg kostenlos. Für langfristige Nutzung, Tracking und Auswertungen stehen optionale In-App-Upgrades bereit. Preise werden in der App angezeigt (können je nach Region leicht abweichen).",
     "billingToggle": {
       "monthly": "Monatlich",
       "yearly": "Jährlich",
-      "save": "Spare 20%"
+      "save": "Spare im Jahresplan"
     },
+    "priceTransparency": "Du startest kostenlos mit einer limitierten Version. Alle Upgrades erfolgen als In-App-Kauf und sind jederzeit kündbar.",
     "free": {
+      "label": "ZUM EINSTIEG",
       "title": "Free",
-      "price": "0€ – Für immer",
+      "price": "0€ – Zum Kennenlernen",
+      "shortDescription": "Rezepte & Notizen sammeln – alles an einem Ort. Ideal zum Einstieg und Ausprobieren.",
       "features": [
-        "Unbegrenzte Notizen mit vordefinierten Tags und Kategorien",
-        "Unbegrenzte Journal-Einträge"
+        "Bis zu 50 Notizen",
+        "14 Journal-Einträge (≈ 2 Wochen)",
+        "3 eigene Kategorien",
+        "5 eigene Tags",
+        "Vordefinierte Tags & Kategorien inklusive"
       ],
-      "cta": "Kostenlos loslegen"
+      "cta": "Kostenlos loslegen",
+      "microcopy": "Upgrade jederzeit möglich"
     },
     "basis": {
+      "label": "EMPFEHLUNG",
+      "subLabel": "FÜR SYSTEMATISCHES TRACKING",
       "title": "Basis",
       "priceMonthly": "7,99€",
       "priceYearly": "76,99€",
@@ -143,19 +155,21 @@
         "monthly": "/ Monat",
         "yearly": "/ Jahr"
       },
+      "shortDescription": "Erkenne Muster: Was hat geholfen – was nicht?",
+      "additionalText": "Ideal für regelmäßige Nutzung",
       "features": [
-        "Alles aus Free",
-        "Personalisierte Tags",
-        "Personalisierte Kategorien",
-        "Symptom-Tracking",
-        "Weekly Review",
-        "Goals",
-        "Progress Dashboard"
+        "Unbegrenzte Notizen & Journals",
+        "Symptome tracken & Trends erkennen",
+        "Weekly Review + persönliche Goals",
+        "Eigene Struktur (Tags & Kategorien)"
       ],
       "cta": "Jetzt upgraden",
-      "badge": "Empfehlung"
+      "badge": "Empfehlung",
+      "microcopy": "In-App-Kauf • jederzeit kündbar"
     },
     "pro": {
+      "label": "COMING SOON",
+      "subLabel": "KI + WISSENSDATENBANK",
       "title": "Pro",
       "priceMonthly": "14,99€",
       "priceYearly": "143,99€",
@@ -163,19 +177,22 @@
         "monthly": "/ Monat",
         "yearly": "/ Jahr"
       },
+      "shortDescription": "Persönliche Beratung auf Basis deiner Notizen & Unterlagen.",
+      "additionalText": "Für alle, die Zusammenhänge wirklich verstehen wollen.",
       "features": [
-        "Alles aus Basis",
-        "KI Naturheilkunde-Berater",
-        "RAG-System für personalisierte Knowledge Base",
-        "Analyse der Journal-Einträge für besseres Tracking und Verständnis der Heilung"
+        "KI-Chat + Chats als Notizen speichern",
+        "PDFs / E-Books nutzen (RAG Knowledge Base)",
+        "Tiefere Auswertung deiner Einträge"
       ],
-      "cta": "Benachrichtigung erhalten",
-      "badge": "Coming Soon"
+      "cta": "Early Access sichern",
+      "badge": "Coming Soon",
+      "microcopy": "In-App-Kauf • jederzeit kündbar"
     }
   },
   "finalCta": {
     "title": "Bereit für mehr Klarheit in deiner Gesundheit?",
     "subtitle": "Starte jetzt kostenlos – keine Kreditkarte erforderlich. Organisiere deine Naturheilkunde-Notizen endlich professionell.",
+    "upgradeNote": "Upgrades kannst du jederzeit in der App aktivieren oder kündigen.",
     "emailPlaceholder": "Deine E-Mail-Adresse",
     "emailCta": "Früher Zugang sichern",
     "downloadCta": "Kostenlos herunterladen"
