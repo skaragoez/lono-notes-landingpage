@@ -130,6 +130,10 @@
       "save": "Yıllık planda tasarruf edin"
     },
     "priceTransparency": "Sınırlı bir sürümle ücretsiz başlıyorsunuz. Tüm yükseltmeler uygulama içi satın alma olarak gerçekleşir ve istediğiniz zaman iptal edilebilir.",
+    "whySubscription": {
+      "title": "Neden Abonelik?",
+      "description": "LONO Notes'u sürekli geliştiriyoruz – yeni özellikler, iyileştirmeler ve güncellemeler abonelikte dahildir."
+    },
     "free": {
       "label": "BAŞLAMAK İÇİN",
       "title": "Ücretsiz",
@@ -165,7 +169,8 @@
       ],
       "cta": "Şimdi yükselt",
       "badge": "Tavsiye Edilen",
-      "microcopy": "Uygulama içi satın alma • istediğiniz zaman iptal edin"
+      "microcopy": "Uygulama içi satın alma • istediğiniz zaman iptal edin",
+      "microcopyNote": "Uygulamayı sürekli geliştirebilmemiz için."
     },
     "pro": {
       "label": "YAKINDA",
@@ -186,7 +191,8 @@
       ],
       "cta": "Erken erişim güvenceye alın",
       "badge": "Yakında",
-      "microcopy": "Uygulama içi satın alma • istediğiniz zaman iptal edin"
+      "microcopy": "Uygulama içi satın alma • istediğiniz zaman iptal edin",
+      "microcopyNote": "Uygulamayı sürekli geliştirebilmemiz için."
     }
   },
   "finalCta": {

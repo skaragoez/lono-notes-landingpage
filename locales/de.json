@@ -130,6 +130,10 @@
       "save": "Spare im Jahresplan"
     },
     "priceTransparency": "Du startest kostenlos mit einer limitierten Version. Alle Upgrades erfolgen als In-App-Kauf und sind jederzeit kündbar.",
+    "whySubscription": {
+      "title": "Warum Abo?",
+      "description": "Wir entwickeln LONO Notes kontinuierlich weiter – neue Funktionen, Verbesserungen und Updates sind im Abo enthalten."
+    },
     "free": {
       "label": "ZUM EINSTIEG",
       "title": "Free",
@@ -165,7 +169,8 @@
       ],
       "cta": "Jetzt upgraden",
       "badge": "Empfehlung",
-      "microcopy": "In-App-Kauf • jederzeit kündbar"
+      "microcopy": "In-App-Kauf • jederzeit kündbar",
+      "microcopyNote": "Damit wir die App stetig verbessern können."
     },
     "pro": {
       "label": "COMING SOON",
@@ -186,7 +191,8 @@
       ],
       "cta": "Early Access sichern",
       "badge": "Coming Soon",
-      "microcopy": "In-App-Kauf • jederzeit kündbar"
+      "microcopy": "In-App-Kauf • jederzeit kündbar",
+      "microcopyNote": "Damit wir die App stetig verbessern können."
     }
   },
   "finalCta": {

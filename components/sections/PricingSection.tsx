@@ -46,6 +46,7 @@ export default function PricingSection() {
     ],
     cta: t('basis.cta'),
     microcopy: t('basis.microcopy'),
+    microcopyNote: t('basis.microcopyNote'),
     highlighted: true,
   };
 
@@ -66,6 +67,7 @@ export default function PricingSection() {
     ],
     cta: t('pro.cta'),
     microcopy: t('pro.microcopy'),
+    microcopyNote: t('pro.microcopyNote'),
     highlighted: false,
   };
 
@@ -197,9 +199,17 @@ export default function PricingSection() {
 
               {/* Microcopy unter CTA */}
               {'microcopy' in plan && plan.microcopy && (
-                <p className="text-xs text-center text-[var(--color-text)] mt-3">
-                  {plan.microcopy}
-                </p>
+                <div className="mt-3">
+                  <p className="text-xs text-center text-[var(--color-text)]">
+                    {plan.microcopy}
+                  </p>
+                  {/* Optional: Sehr kleine Note unter "In-App-Kauf" (nur für Basis/Pro) */}
+                  {'microcopyNote' in plan && plan.microcopyNote && index !== 0 && (
+                    <p className="text-[10px] text-center text-[var(--color-text)] mt-1 opacity-70">
+                      {plan.microcopyNote}
+                    </p>
+                  )}
+                </div>
               )}
             </Card>
           ))}
@@ -207,9 +217,19 @@ export default function PricingSection() {
 
         {/* Price Transparency */}
         <div className="text-center mt-12">
-          <p className="text-sm text-[var(--color-text)] max-w-2xl mx-auto">
+          <p className="text-sm text-[var(--color-text)] max-w-2xl mx-auto mb-6">
             {t('priceTransparency')}
           </p>
+          
+          {/* Warum Abo? Micro-Explanation */}
+          <div className="max-w-2xl mx-auto">
+            <p className="text-xs font-medium text-[var(--color-text-dark)] mb-1">
+              {t('whySubscription.title')}
+            </p>
+            <p className="text-xs text-[var(--color-text)] leading-relaxed">
+              {t('whySubscription.description')}
+            </p>
+          </div>
         </div>
       </div>
     </section>

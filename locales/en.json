@@ -130,6 +130,10 @@
       "save": "Save with annual plan"
     },
     "priceTransparency": "You start free with a limited version. All upgrades are in-app purchases and can be canceled anytime.",
+    "whySubscription": {
+      "title": "Why Subscription?",
+      "description": "We continuously develop LONO Notes – new features, improvements, and updates are included in the subscription."
+    },
     "free": {
       "label": "TO GET STARTED",
       "title": "Free",
@@ -165,7 +169,8 @@
       ],
       "cta": "Upgrade now",
       "badge": "Recommended",
-      "microcopy": "In-app purchase • cancel anytime"
+      "microcopy": "In-app purchase • cancel anytime",
+      "microcopyNote": "So we can continuously improve the app."
     },
     "pro": {
       "label": "COMING SOON",
@@ -186,7 +191,8 @@
       ],
       "cta": "Secure early access",
       "badge": "Coming Soon",
-      "microcopy": "In-app purchase • cancel anytime"
+      "microcopy": "In-app purchase • cancel anytime",
+      "microcopyNote": "So we can continuously improve the app."
     }
   },
   "finalCta": {
