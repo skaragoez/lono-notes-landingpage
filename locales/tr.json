@@ -6,10 +6,11 @@
     "download": "Şimdi indir"
   },
   "hero": {
-    "headline": "Doğal Tıp Tarifleriniz. Sonunda Düzenli.",
-    "subheadline": "Size neyin yardımcı olduğunu bir daha asla unutmayın. LONO Notes ile tüm tarifler, semptomlar ve ilerlemeler tek yerde – her zaman elinizin altında.",
+    "headline": "Doğal Tıbbınız – Bul. Takip Et. Anla.",
+    "subheadline": "Dağınık notlar, kâğıt parçaları ve içgüdülere son. LONO Notes, tarifleri, semptomları ve ilerlemeyi öyle organize etmenize yardımcı olur ki, her zaman neyin size yardımcı olduğunu – ve neden – bilirsiniz.",
     "cta": "Ücretsiz Başla",
     "ctaSecondary": "Daha Fazla Bilgi",
+    "ctaNote": "Başlamak için ücretsiz • İstediğiniz zaman yükseltme mümkün",
     "trustElement": {
       "free": "Ücretsiz",
       "gdpr": "GDPR Uyumlu",

@@ -5,6 +5,7 @@ import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Gift, ShieldCheck, Bot } from 'lucide-react';
+import Button from '@/components/ui/Button';
 
 export default function HeroSection() {
   const t = useTranslations('hero');
@@ -44,22 +45,45 @@ export default function HeroSection() {
               {t('subheadline')}
             </p>
 
-            {/* App Store Badge */}
-            <div className="flex justify-center lg:justify-start">
-              <a 
-                href="https://apps.apple.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="transition-transform hover:scale-105"
-              >
-                <Image
-                  src={appStoreBadges[locale] || appStoreBadges.en}
-                  alt="Download on the App Store"
-                  width={200}
-                  height={60}
-                  className="h-[60px] w-auto"
-                />
-              </a>
+            {/* App Store Badge & CTA */}
+            <div className="flex flex-col items-center lg:items-start gap-4">
+              <div className="flex flex-col sm:flex-row items-center gap-4">
+                {/* App Store Badge */}
+                <a 
+                  href="https://apps.apple.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="transition-transform hover:scale-105"
+                >
+                  <Image
+                    src={appStoreBadges[locale] || appStoreBadges.en}
+                    alt="Download on the App Store"
+                    width={200}
+                    height={60}
+                    className="h-[60px] w-auto"
+                  />
+                </a>
+                
+                {/* CTA Button */}
+                <Button
+                  variant="primary"
+                  size="medium"
+                  onClick={() => {
+                    // Scroll to pricing or handle CTA
+                    const pricingSection = document.getElementById('pricing');
+                    if (pricingSection) {
+                      pricingSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                >
+                  {t('cta')}
+                </Button>
+              </div>
+              
+              {/* CTA Note */}
+              <p className="text-sm text-[var(--color-text)] text-center lg:text-left">
+                {t('ctaNote')}
+              </p>
             </div>
 
             {/* Trust Element */}
