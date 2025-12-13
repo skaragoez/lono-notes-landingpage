@@ -4,11 +4,40 @@ import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 import Card from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
+import Accordion from '@/components/ui/Accordion';
 import { Check, Sparkles } from 'lucide-react';
 
 export default function PricingSection() {
   const t = useTranslations('pricing');
   const [isYearly, setIsYearly] = useState(true); // Default auf Jährlich
+  
+  // FAQ Items
+  const faqItems = [
+    {
+      question: t('faq.items.0.question'),
+      answer: t('faq.items.0.answer'),
+    },
+    {
+      question: t('faq.items.1.question'),
+      answer: t('faq.items.1.answer'),
+    },
+    {
+      question: t('faq.items.2.question'),
+      answer: t('faq.items.2.answer'),
+    },
+    {
+      question: t('faq.items.3.question'),
+      answer: t('faq.items.3.answer'),
+    },
+    {
+      question: t('faq.items.4.question'),
+      answer: t('faq.items.4.answer'),
+    },
+    {
+      question: t('faq.items.5.question'),
+      answer: t('faq.items.5.answer'),
+    },
+  ];
 
   const freePlan = {
     label: t('free.label'),
@@ -229,6 +258,36 @@ export default function PricingSection() {
             <p className="text-xs text-[var(--color-text)] leading-relaxed">
               {t('whySubscription.description')}
             </p>
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="mt-16 max-w-3xl mx-auto">
+          <h3 className="text-2xl font-bold text-[var(--color-text-dark)] text-center mb-8">
+            {t('faq.title')}
+          </h3>
+          
+          {/* Desktop: Alle FAQs angezeigt */}
+          <div className="hidden md:block">
+            <div className="space-y-0 bg-white rounded-lg border border-gray-200 p-6">
+              {faqItems.map((item, index) => (
+                <div key={index} className="border-b border-gray-200 last:border-b-0 py-4 first:pt-0 last:pb-0">
+                  <h4 className="font-semibold text-[var(--color-text-dark)] mb-2">
+                    {item.question}
+                  </h4>
+                  <p className="text-[var(--color-text)] leading-relaxed">
+                    {item.answer}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Mobile: Accordion */}
+          <div className="md:hidden">
+            <div className="bg-white rounded-lg border border-gray-200 p-4">
+              <Accordion items={faqItems} />
+            </div>
           </div>
         </div>
       </div>

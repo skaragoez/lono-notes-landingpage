@@ -134,6 +134,35 @@
       "title": "Warum Abo?",
       "description": "Wir entwickeln LONO Notes kontinuierlich weiter – neue Funktionen, Verbesserungen und Updates sind im Abo enthalten."
     },
+    "faq": {
+      "title": "Häufige Fragen",
+      "items": [
+        {
+          "question": "Warum gibt es ein Abo?",
+          "answer": "LONO Notes wird kontinuierlich weiterentwickelt. Neue Funktionen, Verbesserungen und Auswertungen sind im Abo enthalten – so bleibt die App langfristig aktuell und nützlich."
+        },
+        {
+          "question": "Ist die kostenlose Version wirklich gratis?",
+          "answer": "Ja. Du kannst LONO Notes kostenlos nutzen, um die App kennenzulernen. Für langfristige Nutzung, Tracking und Auswertungen gibt es optionale In-App-Upgrades."
+        },
+        {
+          "question": "Kann ich jederzeit kündigen?",
+          "answer": "Ja. Alle Upgrades sind In-App-Käufe und können jederzeit über den App Store gekündigt werden."
+        },
+        {
+          "question": "Warum kein Einmalkauf?",
+          "answer": "LONO Notes ist kein statisches Produkt. Die App wächst mit neuen Funktionen, besseren Analysen und Verbesserungen – das Abo ermöglicht diese Weiterentwicklung."
+        },
+        {
+          "question": "Sind meine Daten sicher?",
+          "answer": "Ja. Deine Daten gehören dir. LONO Notes ist DSGVO-konform und speichert Inhalte sicher und vertraulich."
+        },
+        {
+          "question": "Muss ich meine Daten für KI freigeben?",
+          "answer": "Nein. KI-Funktionen sind optional und nur im Pro-Plan verfügbar. Ohne Upgrade bleiben deine Inhalte rein manuell nutzbar."
+        }
+      ]
+    },
     "free": {
       "label": "ZUM EINSTIEG",
       "title": "Free",

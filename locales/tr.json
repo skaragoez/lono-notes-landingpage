@@ -134,6 +134,35 @@
       "title": "Neden Abonelik?",
       "description": "LONO Notes'u sürekli geliştiriyoruz – yeni özellikler, iyileştirmeler ve güncellemeler abonelikte dahildir."
     },
+    "faq": {
+      "title": "Sıkça Sorulan Sorular",
+      "items": [
+        {
+          "question": "Neden bir abonelik var?",
+          "answer": "LONO Notes sürekli geliştiriliyor. Yeni özellikler, iyileştirmeler ve analizler abonelikte dahildir – uygulama uzun vadede güncel ve kullanışlı kalır."
+        },
+        {
+          "question": "Ücretsiz sürüm gerçekten ücretsiz mi?",
+          "answer": "Evet. Uygulamayı tanımak için LONO Notes'u ücretsiz kullanabilirsiniz. Uzun vadeli kullanım, takip ve analizler için isteğe bağlı uygulama içi yükseltmeler mevcuttur."
+        },
+        {
+          "question": "İstediğim zaman iptal edebilir miyim?",
+          "answer": "Evet. Tüm yükseltmeler uygulama içi satın almalardır ve App Store üzerinden istediğiniz zaman iptal edilebilir."
+        },
+        {
+          "question": "Neden tek seferlik satın alma değil?",
+          "answer": "LONO Notes statik bir ürün değildir. Uygulama yeni özellikler, daha iyi analizler ve iyileştirmelerle büyür – abonelik bu gelişimi mümkün kılar."
+        },
+        {
+          "question": "Verilerim güvende mi?",
+          "answer": "Evet. Verileriniz size aittir. LONO Notes GDPR uyumludur ve içerikleri güvenli ve gizli olarak saklar."
+        },
+        {
+          "question": "AI için verilerimi paylaşmak zorunda mıyım?",
+          "answer": "Hayır. AI özellikleri isteğe bağlıdır ve yalnızca Pro planda mevcuttur. Yükseltme olmadan içerikleriniz tamamen manuel olarak kullanılabilir."
+        }
+      ]
+    },
     "free": {
       "label": "BAŞLAMAK İÇİN",
       "title": "Ücretsiz",

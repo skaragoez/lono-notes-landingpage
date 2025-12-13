@@ -134,6 +134,35 @@
       "title": "Why Subscription?",
       "description": "We continuously develop LONO Notes – new features, improvements, and updates are included in the subscription."
     },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "Why is there a subscription?",
+          "answer": "LONO Notes is continuously being developed. New features, improvements, and analyses are included in the subscription – keeping the app up-to-date and useful long-term."
+        },
+        {
+          "question": "Is the free version really free?",
+          "answer": "Yes. You can use LONO Notes for free to get to know the app. For long-term use, tracking, and analysis, there are optional in-app upgrades."
+        },
+        {
+          "question": "Can I cancel anytime?",
+          "answer": "Yes. All upgrades are in-app purchases and can be canceled anytime through the App Store."
+        },
+        {
+          "question": "Why not a one-time purchase?",
+          "answer": "LONO Notes is not a static product. The app grows with new features, better analyses, and improvements – the subscription enables this development."
+        },
+        {
+          "question": "Is my data safe?",
+          "answer": "Yes. Your data belongs to you. LONO Notes is GDPR-compliant and stores content securely and confidentially."
+        },
+        {
+          "question": "Do I have to share my data for AI?",
+          "answer": "No. AI features are optional and only available in the Pro plan. Without an upgrade, your content remains purely manually usable."
+        }
+      ]
+    },
     "free": {
       "label": "TO GET STARTED",
       "title": "Free",
